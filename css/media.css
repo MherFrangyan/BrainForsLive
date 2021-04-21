@@ -229,7 +229,7 @@
     
     /* slide pagination start */
     .mian_slider .slide_pagination{
-        top:40%;
+        top: 45%
     }
     .slide_pagination .pagin_count{
         transform: rotate(-90deg) translate(30px,-70%);
@@ -241,7 +241,7 @@
     
     /* scroll down start */
     .scrolle_down_respons{
-        bottom: 25% !important;
+        bottom: 13% !important;
         display: block !important;
     }
     .scrolle_down_respons .scrolle_down_icon{
