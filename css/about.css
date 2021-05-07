@@ -1,0 +1,156 @@
+.main_about {
+    background: #23504B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.carousel_block {
+
+}
+
+.staff_view {
+    opacity: 0;
+    transform: translate(-200px,25px);
+
+}
+
+.circle {
+
+}
+
+.circle__item {
+    display: flex;
+    max-width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.circle__item  .circle__icon{
+    color: #fff;
+    position: absolute;
+    transform: rotate(337deg);
+}
+.circle__spinner {
+    transform: rotate(270deg);
+    width: 70px;
+    height: 70px;
+}
+
+.circle__spinner .path {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-dasharray: 0, 150;
+    opacity: 0;
+
+}
+
+.loader_carousel {
+    text-align: right;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 40px;
+    top: 50px;
+}
+
+.worker {
+    position: relative;
+    display: flex;
+    margin: 4px auto;
+    width: 260px;
+    height: 356px;
+    background-color: rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.worker.worker__show .worket__about{
+    z-index: 5;
+    top: initial;
+
+    transition: all .5s;
+}
+.worker .worker__photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.worket__about{
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    width: 220px;
+    background: rgba(0, 0, 0, .7);
+    height: 99%;
+    flex-direction: column;
+    top: 400px;
+    justify-content: center;
+
+}
+.worket__about .worker__name{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.worket__about .worker__role{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.worker_1_col {
+    position: relative;
+    left: 100px;
+    top: 30px;
+    z-index: 0;
+}
+
+.worker_2_col {
+    position: relative;
+    top: 80px;
+    z-index: 0;
+}
+
+.worker_3_col {
+    position: relative;
+    right: 110px;
+    top: 48px;
+    z-index: 0;
+}
+
+.worker_4_col {
+    position: relative;
+    bottom: 75px;
+    left: 20px;
+    z-index: 0;
+}
+
+.worker_5_col {
+    position: relative;
+    bottom: 115px;
+    z-index: 0;
+}
+
+.worker_6_col {
+    position: relative;
+    bottom: 90px;
+    right: 25px;
+    z-index: 0;
+
+}
+
+.worker_7_col {
+    position: relative;
+    bottom: 120px;
+    right: 50px;
+    z-index: 0;
+}
+
+
+

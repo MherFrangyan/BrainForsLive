@@ -162,7 +162,7 @@ $('.scrolle_down .scrolle_down_icon').on('click', () => {
                     }, 1000);
 
                     $('.mian_slider').css('transform', 'scale(1)');
-                    $('.content_block1').css('bottom', '50%');
+                    $('.content_block1').css('bottom', '55%');
                     timeNext = setTimeout(() => {
                         $('.loader').addClass('d-none');
                         $('.ball').css('z-index', '0');
@@ -223,7 +223,7 @@ $('.home-page').on('mousewheel', debounce((e) => {
                         }, 1000);
 
                         $('.mian_slider').css('transform', 'scale(1)');
-                        $('.content_block1').css('bottom', '50%');
+                        $('.content_block1').css('bottom', '55%');
                         timeNext = setTimeout(() => {
                             $('.loader').addClass('d-none');
                             $('.ball').css('z-index', '0');
@@ -358,7 +358,7 @@ function funcprev1() {
     $('.loader1').removeClass('d-none');
     $('.ball').css('z-index', '0');
     $('.ball1').css('z-index', '-1');
-    $('.content_block1').css('bottom', '50%');
+    $('.content_block1').css('bottom', '55%');
     $('.scrolle_down_respons').removeClass('more_color');
     timeoutPrev = setTimeout(() => {
         funcnext1();
@@ -424,7 +424,7 @@ function funcprev4() {
         clearTimeout(timeNext)
     }
     $('.slide_4 .slide-overlay').removeClass('d-none');
-    $('.content_block4').css('bottom', '45%');
+    $('.content_block4').css('bottom', '55%');
     $('.mian_slider').removeClass('main_slide4_more');
     $('.loader').addClass('d-none');
     $('.loader4').removeClass('d-none');
@@ -519,7 +519,7 @@ function viewSlide3() {
         $('.scrolle_down_respons').removeClass('more_color');
         $('.slider_content').css('transform', `translateX(${-innerWidth * 3}px)`);
         $('.mian_slider').removeClass('main_slide3_more');
-        $('.content_block4').css('bottom', '45%')
+        $('.content_block4').css('bottom', '55%')
     }, 360)
     $('.pagin').removeClass('active');
 
@@ -568,11 +568,12 @@ function clickChangedSlide1() {
     $('.ball1').css('z-index', '-1');
     $('.pagin').removeClass('active');
     $('.pagin1').addClass('active');
-    $('.content_block1').css('bottom', '50%')
+    $('.content_block1').css('bottom', '55%')
 }
 
 function clickChangedSlide2() {
     if (timeoutPrev || timeoutNext || clickTimeout || timeNext) {
+        clearTimeout(timeoutNext);
         clearTimeout(timeoutNext);
         clearTimeout(timeoutPrev);
         clearTimeout(clickTimeout);
@@ -659,7 +660,7 @@ function clickChangedSlide4() {
     $('.pagin').removeClass('active');
     $('.pagin4').addClass('active');
     setTimeout(() => {
-        $('.content_block4').css('bottom', '45%')
+        $('.content_block4').css('bottom', '55%')
     }, 360)
 }
 
@@ -678,7 +679,6 @@ $('.mian_slider .slide_1 .slide-overlay, .mian_slider .slide_1 .content_block').
         $('.nav-list').removeClass("d-none");
         setTimeout(() => {
             video.play();
-            console.log('sadcasdcasdcasd');
             $('.nav-list').css('left', '0px');
             $('.nav-toggle').css('right', '-5000px');
             $('#video_fullScreen').css('transform', 'translateY(0px)');
@@ -729,7 +729,7 @@ $('.mian_slider .slide_2 .slide-overlay, .mian_slider .slide_2 .content_block').
             $('.ball').css('z-index', '0')
             $('.pagin').removeClass('active')
             $('.slider_content').css('transform', `translateX(${0}px)`)
-            $('.content_block1').css('bottom', '50%')
+            $('.content_block1').css('bottom', '55%')
             $('.content_block2').css('left', '4000px')
         }, 360)
         setTimeout(() => {
@@ -856,7 +856,7 @@ $('#scrolldown1').on('click', function (e) {
     } else {
         funcnext1()
     }
-})
+});
 
 $('#scrolldown2').on('click', function (e) {
     if (e.currentTarget.parentElement.className === 'scrolle_down_respons more_color') {
@@ -864,7 +864,7 @@ $('#scrolldown2').on('click', function (e) {
     } else {
         funcnext2()
     }
-})
+});
 
 $('#scrolldown3').on('click', function (e) {
     if (e.currentTarget.parentElement.className === 'scrolle_down_respons more_color') {
@@ -872,7 +872,7 @@ $('#scrolldown3').on('click', function (e) {
     } else {
         funcnext3()
     }
-})
+});
 
 $('#scrolldown4').on('click', function (e) {
     if (e.currentTarget.parentElement.className === 'scrolle_down_respons more_color') {
@@ -880,4 +880,4 @@ $('#scrolldown4').on('click', function (e) {
     } else {
         funcnext4()
     }
-})
+});
