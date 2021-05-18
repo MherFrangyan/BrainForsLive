@@ -196,6 +196,9 @@ body {
     margin-right: 20px;
     color: white;
 }
+.heder-nav .nav-list .nav-link.active{
+    color: black;
+}
 
 /* navbar start */
 

@@ -1,9 +1,20 @@
+.nav-fixed{
+    position: fixed;
+    box-shadow: 0px 17px 19px -27px rgba(0,0,0,0.75);
+    width: 100%;
+    z-index: 99;
+}
+.heder-nav{
+    position: initial;
+    width: initial;
+}
 .main_about {
+    padding-top: 40px;
     background: #23504B;
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -13,7 +24,7 @@
 
 .staff_view {
     opacity: 0;
-    transform: translate(-200px,25px);
+    transform: translate(-200px, 25px);
 
 }
 
@@ -27,11 +38,13 @@
     justify-content: center;
     align-items: center;
 }
-.circle__item  .circle__icon{
+
+.circle__item .circle__icon {
     color: #fff;
     position: absolute;
     transform: rotate(337deg);
 }
+
 .circle__spinner {
     transform: rotate(270deg);
     width: 70px;
@@ -41,7 +54,6 @@
 .circle__spinner .path {
     stroke: #fff;
     stroke-linecap: round;
-    stroke-dasharray: 0, 150;
     opacity: 0;
 
 }
@@ -67,43 +79,49 @@
     overflow: hidden;
 
 }
-.worker.worker__show .worket__about{
+
+.worker.worker__show .worket__about {
     z-index: 5;
     top: initial;
 
     transition: all .5s;
 }
+
 .worker .worker__photo {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.worket__about{
+
+.worket__about {
     z-index: 0;
     display: flex;
     position: absolute;
-    width: 220px;
-    background: rgba(0, 0, 0, .7);
-    height: 99%;
+    width: 225px;
+    background: rgba(35, 80, 75, .9);
+    height: 91%;
     flex-direction: column;
     top: 400px;
     justify-content: center;
 
 }
-.worket__about .worker__name{
+
+.worket__about .worker__name {
     font-size: 18px;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
     font-weight: 400;
 }
-.worket__about .worker__role{
+
+.worket__about .worker__role {
     font-size: 14px;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
     font-weight: 200;
 }
+
 .worker_1_col {
     position: relative;
     left: 100px;
@@ -150,6 +168,45 @@
     bottom: 120px;
     right: 50px;
     z-index: 0;
+}
+
+/*contact us page css*/
+.bg-baner{
+    background: url('../img/2.jpg') center center no-repeat;
+    background-size: cover;
+    height: 604px;
+    position: relative;
+    padding-top: 100px;
+
+}
+.bg_fon{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 604px;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+}
+.baner_title{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 705px;
+    margin: auto;
+    color: #FFFFFF;
+}
+.baner_title .hi_content{
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+.baner_title .baner_description{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 

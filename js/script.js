@@ -118,7 +118,7 @@ $(window).on('load', function (e) {
 // loader page code end
 
 
-var count = 1
+var count = 1;
 var timeNext = null;
 var timeoutNext = null;
 var timeoutPrev = null;
