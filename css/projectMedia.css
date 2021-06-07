@@ -1,0 +1,174 @@
+@media (max-width: 1300px) {
+    .project_content_block .project_name {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .project_slide .carousel{
+        max-width: 500px;
+        min-width: 400px;
+
+    }
+
+}
+
+
+@media(max-width:1200px) {
+
+}
+
+@media(max-width:991px) {
+    .project_nav-toggle.heder-nav .nav-toggle{
+        right: 0 !important;
+    }
+    .carousel_content .about_project{
+        flex-direction: column-reverse;
+        padding-left: 0;
+        height: 100%;
+        position: relative;
+        z-index: 9;
+    }
+    .section .carousel_content {
+        position: absolute;
+        height: 300px;
+        top: 0;
+    }
+    .project_content_block{
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        width: 390px;
+        transform: translateX(-50%);
+        top: 110px;
+    }
+    .project_content_block .project_description{
+        padding-left: 20px;
+    }
+    .project_slide{
+        max-width: initial;
+    }
+    .project_slide .carousel{
+        width: 100%;
+        max-width: initial;
+        min-width: initial;
+    }
+    .click_change_slide{
+        display: none;
+    }
+    .project_content_block .project_name{
+        margin-bottom: 80px;
+        color: #FFFFFF;
+
+    }
+    .section .carousel_navigation {
+        position: relative;
+        width: 22%;
+        z-index: 8;
+        padding-left: 0;
+    }
+    .carousel_navigation .view_item {
+        position: relative;
+        box-sizing: content-box;
+        padding: 6px 0;
+        font-size: 13px;
+        margin-bottom: 0;
+        height: 23px;
+    }
+    .carousel_navigation .view_item.active .active_line {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation_block{
+        position: absolute;
+        top: 48%;
+        width: 100%;
+    }
+    .carousel_navigation .carousel_view_number {
+        width: 100%;
+        padding-left: 40px;
+    }
+    .click_md_change_slide{
+        width: 20px;
+        display: block;
+        transform: rotate(180deg);
+    }
+    .project_page_content .carousel_down_line{
+        left: 0;
+        right: 0;
+        width: initial;
+    }
+}
+
+@media(max-width:767px) {
+    .project_content_block{
+        width: initial;
+    }
+    .project_nav-toggle.heder-nav .menu_list{
+        left: 53% !important;
+    }
+}
+
+@media(max-width:576px) {
+    .project_nav-toggle.heder-nav .nav-toggle {
+        right: -100px !important;
+    }
+    .project_nav-toggle.heder-nav .menu_list{
+        left: 62% !important;
+    }
+    .project_content_block{
+        top: 105px;
+    }
+    .project_content_block .project_name{
+        font-size: 38px;
+        margin-bottom: 65px;
+
+    }
+    .project_content_block .project_description {
+
+    }
+    .navigation_block{
+        top: 46%;
+    }
+}
+
+@media(max-width:480px) {
+    .project_nav-toggle.heder-nav .nav-toggle{
+        right: -55px !important;
+    }
+    .project_content_block{
+        top: 160px;
+        left: 25%;
+        transform: translateX(-5%);
+        margin-bottom: 40px;
+    }
+    .carousel_content .about_project{
+        height: 80%;
+    }
+    .project_content_block .project_name{
+        font-size: 22px;
+    }
+    .project_content_block .project_description{
+        font-size: 12px;
+    }
+    .carousel_navigation .carousel_view_number{
+        padding-left: 18px;
+    }
+    .carousel_navigation .view_item{
+        font-size: 11px;
+        height: 20px;
+    }
+    .navigation_block{
+        top: 43%;
+    }
+    .carousel_down_line .section_title{
+        font-size: 6px;
+        margin-bottom: 2px;
+    }
+    .carousel_down_line .section_text{
+        font-size: 12px;
+    }
+    .click_md_change_slide{
+        width: 13px;
+    }
+
+}

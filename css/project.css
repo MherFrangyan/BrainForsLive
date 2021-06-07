@@ -1,0 +1,229 @@
+.project_main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project_page_content {
+    height: 100%;
+}
+
+.project_page_content .section {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.section .carousel_navigation {
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, .1);;
+}
+
+#carouselExampleControls .slide_navigation_block {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    right: 0;
+    height: 60px;
+    align-items: center;
+    background: black;
+}
+
+#carouselExampleControls .carousel-control-next, .carousel-control-prev {
+    width: 100%;
+    height: 50px;
+    position: initial;
+    opacity: 1;
+    color: #d8d8d8;
+    font-size: 8px;
+}
+
+.slide_navigation_block .center_line {
+    border-right: 1px solid #fff;
+    height: 8px;
+    top: 0;
+}
+
+.carousel_navigation .view_item {
+    padding: 0;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    color: #bfbfbf;
+    margin-bottom: 13px;
+    justify-content: space-between;
+    height: 40px;
+
+
+    transition: all .5s;
+}
+
+.carousel_navigation .view_item.active {
+    color: black;
+}
+
+.carousel_navigation .view_item.active .active_line {
+    background: #23504B;
+    width: 2px;
+    height: 0%;
+
+    transition: all .5s;
+}
+
+.carousel_navigation .view_item.active .active_line {
+    height: 100%;
+
+}
+
+.carousel_navigation .view_item:nth-last-child(-n+1) {
+    margin-bottom: 0;
+    color: #7d7d7d;
+}
+
+.carousel_navigation .view_item:hover {
+    color: black;
+}
+
+.carousel_navigation .carousel_view_number {
+    padding: 0;
+    list-style: none;
+    width: 130px;
+}
+
+.project_slide {
+    display: flex;
+    align-items: flex-end;
+    max-width: 700px;
+
+}
+.project_slide .carousel{
+    max-width: 600px;
+ }
+.project_slide .carousel-item {
+    position: relative;
+    height: calc(100vh - 160px);
+    width: 100%
+}
+.project_slide .carousel_fon{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 604px;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+
+.project_slide .carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel_content {
+    width: 100%;
+}
+
+.carousel_content .about_project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.project_content_block {
+    max-width: 400px;
+    padding-right: 15px;
+    margin: auto;
+
+}
+
+.project_content_block .project_name {
+    font-size: 56px;
+    color: #23504B;
+    margin-bottom: 24px;
+}
+
+.project_content_block .project_description {
+    color: #a9a9a9;
+    font-size: 14px;
+    line-height: 1.71em;
+}
+
+.project_page_content .carousel_down_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 190px;
+    width: 730px;
+    padding: 35px 10px;
+    background: #23504B;
+    color: #FFFFFF;
+    z-index: 8;
+}
+
+.carousel_down_line .down_line_section {
+
+}
+
+.carousel_down_line .section_title {
+    padding-bottom: 4px;
+    font-size: 9px;
+    color: #7c8685;
+    letter-spacing: .2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.carousel_down_line .section_text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.click_change_slide {
+    cursor: pointer;
+    height: 150px;
+    width: 100px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.click_md_change_slide{
+    display: none;
+}
+.click_md_change_slide svg{
+    fill:white;
+}
+
+.click_change_slide svg {
+    width: 29px;
+    transform: translateY(0px);
+    margin-top: 70px;
+    text-align: center;
+
+    transition: all .5s;
+}
+
+.click_change_slide:hover svg {
+    transform: translateY(10px);
+    fill: red;
+}
+
+.click_change_slide .click_scroll_text {
+    width: 130px;
+    color: #a0a0a0;;
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    letter-spacing: .28em;
+    font-weight: 500;
+    font-size: 8px;
+}
+
+

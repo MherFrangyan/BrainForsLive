@@ -1,6 +1,7 @@
 @import "aboutMedia.css";
+@import "projectMedia.css";
 @media(max-width:1200px) {
-    
+
 }
 @media(min-width:992px){
     /* navbar start */
@@ -275,11 +276,55 @@
     }
     /* scroll down start */
 
+    /*contact us page media-css*/
+    .contact_us_main .bg-baner{
+        padding-top: 55px;
+    }
+    .contact_us_main .contact_form{
+        top: 10px;
+        padding: 0px 20px 15px;
+    }
+    .contact_form .input_block{
+        max-width: 95%;
+        margin: 50px auto 0;
+    }
+    .contact_form .textarea_block{
+        margin: 10px auto 0;
+        max-width: 95%;
+    }
+    .location_block .armenian_office .contact_block{
+        flex-direction: row;
+        padding: 15px 0;
+    }
+    .location_block .armenian_office .contact_block .line{
+        margin: 19px 30px 20px;
+    }
+    .tab-content .armenian_office .team_photo{
+        height: 300px;
+    }
+    .location_block  .armenian_office .contact_block .mail_block .mail_icon{
+        font-size: 35px;
+    }
+    .location_block .armenian_office .contact_block .phone_block .phone_icon{
+        font-size: 35px;
+    }
+    .location_block .armenian_office .contact_block .mail_block .mail_name{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .location_block .armenian_office .contact_block .phone_block .phone_number{
+        margin-top: 11px;
+        font-size: 16px;
+    }
+    .location_block .nav-tabs .nav-item .nav-link{
+        padding: 12px 0 13px;
+    }
+
 }
 
 @media(max-width:576px) {
     /* navbar start */
-    .menu_list.media_hide{
+    .home_page_navbar .menu_list.media_hide{
         left: 64% !important;
     }
     /* navbar emd */
@@ -465,6 +510,20 @@
         font-size: 30px;
     }
     /* slide pagination end */
+
+
+    /*contact us page media-css*/
+
+    .contact_us_main .location_block{
+        height: 650px;
+    }
+    .heder-nav .nav-toggle{
+        right: 17px !important;
+    }
+    .home_page_navbar .heder-nav .nav-toggle{
+        right: -50px !important;
+    }
+
 }
 
 @media(max-width:480px) {
@@ -539,4 +598,46 @@
     .scrolle_down_respons{
         bottom: 20% !important;
     }
+
+
+
+
+    /*contact us page media-css*/
+    .contact_us_main .location_block{
+        height: 600px;
+    }
+    .location_block .armenian_office .contact_block .phone_block .phone_icon{
+        font-size: 25px;
+    }
+    .location_block .armenian_office .contact_block .mail_block .mail_name{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .location_block  .armenian_office .contact_block .mail_block .mail_icon{
+        font-size: 25px;
+    }
+    .tab-content .armenian_office .team_photo .bg-fone .office_address{
+        font-size: 13px;
+    }
+    .location_block .armenian_office .contact_block .phone_block .phone_number{
+        margin-top: 6px;
+        font-size: 13px;
+    }
+    .location_block .armenian_office .contact_block .line{
+        margin: 17px 10px 20px;
+        width: 40px;
+    }
+    .tab-content .armenian_office .team_photo{
+        background-position: -165px;
+    }
+
+    .contact_form .textarea_block  textarea{
+        height: 95px;
+    }
+    .contact_form .textarea_block .btn-outline-green{
+        padding: 7px 0 8px;
+        font-size: 13px;
+        width: 95px;
+    }
+
 }

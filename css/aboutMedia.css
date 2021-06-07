@@ -13,6 +13,14 @@
         top: -65px;
         left: 30px;
     }
+
+    div.main_about {
+        padding-top: 0px;
+    }
+
+    .staff_view {
+        transform: translateY(0px);
+    }
 }
 @media (max-width: 991px){
     .heder-nav .nav-toggle {

@@ -1,13 +1,15 @@
-.nav-fixed{
+.nav-fixed {
     position: fixed;
-    box-shadow: 0px 17px 19px -27px rgba(0,0,0,0.75);
+    box-shadow: 0px 17px 19px -27px rgba(0, 0, 0, 0.75);
     width: 100%;
     z-index: 99;
 }
-.heder-nav{
+
+.heder-nav {
     position: initial;
     width: initial;
 }
+
 .main_about {
     padding-top: 40px;
     background: #23504B;
@@ -18,19 +20,12 @@
     overflow: hidden;
 }
 
-.carousel_block {
-
-}
-
 .staff_view {
     opacity: 0;
     transform: translate(-200px, 25px);
 
 }
 
-.circle {
-
-}
 
 .circle__item {
     display: flex;
@@ -55,7 +50,6 @@
     stroke: #fff;
     stroke-linecap: round;
     opacity: 0;
-
 }
 
 .loader_carousel {
@@ -171,7 +165,7 @@
 }
 
 /*contact us page css*/
-.bg-baner{
+.bg-baner {
     background: url('../img/2.jpg') center center no-repeat;
     background-size: cover;
     height: 604px;
@@ -179,16 +173,18 @@
     padding-top: 100px;
 
 }
-.bg_fon{
+
+.bg_fon {
     z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
     height: 604px;
     width: 100%;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
 }
-.baner_title{
+
+.baner_title {
     position: relative;
     z-index: 2;
     text-align: center;
@@ -196,17 +192,376 @@
     margin: auto;
     color: #FFFFFF;
 }
-.baner_title .hi_content{
-    margin-bottom: 23px;
-    font-weight: bold;
-    font-size: 24px;
+
+.baner_title .hi_content {
+    transform: scale(1);
+    opacity: 1;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: capitalize;
     line-height: 29px;
 
 }
-.baner_title .baner_description{
+
+.baner_title .baner_description {
     font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.contact_form {
+    position: relative;
+    padding: 0px 20px 84px;
+    top: 40px;
+    z-index: 3;
+    height: auto;
+    margin: auto;
+    background: #FCFCFC;
+    border-radius: 15px;
+}
+
+.input_block {
+    max-width: 500px;
+    margin: 115px auto 0;
+}
+
+.input_item {
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    background: none;
+    color: #A7A7A7;
     font-size: 14px;
     line-height: 17px;
+    border-radius: 0;
+    opacity: .8;
+    margin-bottom: 34px;
+
+}
+
+.input_item:focus {
+    box-shadow: none;
+}
+
+.textarea_block {
+    margin: 112px auto 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+}
+
+.contact_form textarea {
+    padding: 5px;
+    color: #A7A7A7;
+    border-color: #E5E5E5;
+    height: 118px;
+}
+
+.contact_form textarea:focus {
+    border-color: #E5E5E5;
+    outline: none;
+}
+
+.contact_form label {
+    color: #A7A7A7;
+}
+
+.textarea_block .btn-outline-green {
+    background: #FFFFFF;
+    border-radius: 0;
+    border: 1px solid #23504B;
+    box-sizing: border-box;
+    color: #23504B;
+    margin-left: auto;
+    padding: 10px 0;
+    width: 111px;
+    font-size: 14px;
+    line-height: 140.69%;
+    margin-top: 43px;
+
+    transition: all .3s;
+}
+
+.textarea_block .btn-outline-green:hover {
+    background: #23504B;
+    color: white;
+}
+
+.textarea_block .btn-outline-green:focus {
+    box-shadow: none;
+}
+
+.location_block {
+    background: url("../img/Google-Maps.png") center center no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding-top: 115px;
+}
+
+.location_block .nav-tabs {
+    border: none;
+}
+
+.location_block .nav-tabs .nav-item {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.location_block .nav-tabs #armenia-tab {
+    border-radius: 15px 0px 0px 0px;
+}
+
+.location_block .nav-tabs #usa-tab {
+    border-radius: 0px 15px 0px 0px;
+}
+
+.location_block .nav-tabs .nav-link {
+    padding: 17px 0 16px;
+    border: none;
+    background: #FFFFFF;
+    color: #23504B;
+
+}
+
+.location_block .nav-tabs .nav-link.active {
+    background: #23504B;
+    color: #FFFFFF;
+}
+
+.use_office {
+    background: #23504B;
+    height: 400px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.use_office .coming_soon {
+    font-size: 25px;
+    color: white;
+}
+
+.armenian_office .team_photo {
+    position: relative;
+    background: url("../img/5.jpg") center center no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.armenian_office .team_photo .bg-fone {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: flex-end;
+}
+
+.armenian_office .team_photo .bg-fone .office_address {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.9;
+    padding-left: 15px;
+    margin-bottom: 12px;
+}
+
+.armenian_office .contact_block {
+    height: 100%;
+    background: #23504B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.armenian_office .contact_block .line {
+    border: 1px solid rgba(255, 255, 255, .4);
+    width: 65px;
+    margin: 30px 0 30px;
+}
+
+.armenian_office .contact_block .phone_block, .mail_block {
+    color: white;
+    text-align: center;
+}
+
+.armenian_office .contact_block .phone_block .phone_icon {
+    font-size: 45px;
+}
+
+.armenian_office .contact_block .phone_block .phone_number {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.armenian_office .contact_block .mail_block .mail_icon {
+    font-size: 45px;
+}
+
+.armenian_office .contact_block .mail_block .mail_name {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer {
+    padding-bottom: 25px;
+    padding-top: 55px;
+    background: #23504B;
+    height: auto;
+}
+
+.footer .footer_item_main {
+    padding-left: 15px;
+    max-width: 300px;
+}
+
+.footer .item1 .item_title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140.69%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer .footer_colum {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.footer .footer_phone_block {
+    border-top: 1px solid rgba(255, 255, 255, .4);
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.footer .footer_colum .icon_colum {
+    width: 24px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 10px;
+
+}
+
+.footer .colum_content {
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140.69%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.footer .colum_content span {
+    font-weight: 300;
+}
+
+.footer .colum_content p {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140.69%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer .footer_navigation_block {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer .footer_navigation_block .footer_item {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer .footer_navigation_block .footer_item .footer_link {
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 140.69%;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+    transition: all .3s;
+}
+
+.footer .footer_navigation_block .footer_item .footer_link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.news_today_block {
+    padding-top: 15px;
+}
+
+.news_today_block .news_today_content {
+    font-size: 14px;
+    line-height: 140.69%;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.news_today_block .email_contact {
+    background: none;
+}
+
+.footer .footer_down_line {
+    border: 1px solid rgba(255, 255, 255, .4);
+    max-width: 850px;
+    margin: 0px auto 35px;
+    display: block;
+}
+
+.footer_down_text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+
+.footer_down_text .company_name {
+    font-size: 14px;
+    line-height: 140.69%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+.footer_down_text .social_icons span {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.footer_down_text .social_icons .fb_icon {
+    margin-left: 0;
+}
+
+.footer_down_text .social_icons span a {
+    color: #ffffff;
+    text-align: center;
+    width: 28px;
+    display: inline-block;
+
+    transition: all .3s;
+}
+
+.footer_down_text .social_icons span a:hover {
+    color: #000;
 }
 
 

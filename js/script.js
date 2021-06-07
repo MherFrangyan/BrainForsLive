@@ -1,3 +1,8 @@
+//scroll bar
+document.addEventListener("DOMContentLoaded", function() {
+    OverlayScrollbars(document.querySelectorAll("body"), { });
+});
+
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
@@ -246,6 +251,7 @@ $('.home-page').on('mousewheel', debounce((e) => {
 
 
 $('.nav-toggle').on('click', () => {
+    console.log('asdcasdcasdcac')
     $('.min_menu_block').removeClass('d-none');
     $('.nav-list').removeClass('d-none');
     $('.nav-list').addClass("menu_list");
@@ -259,7 +265,7 @@ $('.close_menu').on('click', () => {
     $('.navbar-brand').removeClass('d-none');
     $('.nav-toggle').removeClass('d-none');
     $('.nav-list').addClass('d-none');
-})
+});
 
 
 // setTimeout block
