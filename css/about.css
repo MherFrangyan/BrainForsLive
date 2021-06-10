@@ -294,7 +294,7 @@
 .location_block {
     background: url("../img/Google-Maps.png") center center no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 1080px;
     padding-top: 115px;
 }
 
@@ -519,12 +519,28 @@
 .news_today_block .email_contact {
     background: none;
 }
+.news_today_block .btn-secondary{
+    background: #E5E5E5;
+    color: #616161;
+    border: 1px solid #ced4da;
+    padding: 0 30px;
+}
+.news_today_block .btn-secondary:focus{
+    box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    background: #E5E5E5;
+    box-shadow: none !important;
+    color: #616161;
+    border: 1px solid #ced4da;
+}
 
 .footer .footer_down_line {
-    border: 1px solid rgba(255, 255, 255, .4);
+    height: 1px;
     max-width: 850px;
     margin: 0px auto 35px;
     display: block;
+    background: rgba(255, 255, 255, .4);
 }
 
 .footer_down_text {
