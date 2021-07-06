@@ -211,6 +211,7 @@
 }
 
 .contact_form {
+    width: 80%;
     position: relative;
     padding: 0px 20px 84px;
     top: 40px;
@@ -295,11 +296,15 @@
     background: url("../img/Google-Maps.png") center center no-repeat;
     background-size: cover;
     height: 1080px;
-    padding-top: 115px;
+    padding-top: 70px;
 }
 
 .location_block .nav-tabs {
     border: none;
+}
+.location_block .nav_tab_block {
+    width: 80%;
+    margin: auto;
 }
 
 .location_block .nav-tabs .nav-item {
@@ -579,6 +584,29 @@
 .footer_down_text .social_icons span a:hover {
     color: #000;
 }
+/*contact us page css end*/
 
+
+/*about us page css start*/
+.about_us_main_content{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.about_us_main_content .row{
+    margin-top: 100px;
+}
+.about_us_main_content .team_content{
+    font-size: 16px;
+    line-height: 140.69%;
+    color: #615E5E;
+    max-width: 505px;
+    margin: auto;
+}
+.about_us_main_content .team_content .company{
+    color: #23504B;
+    font-weight: bold;
+}
+
+/*about us page css end*/
 
 
