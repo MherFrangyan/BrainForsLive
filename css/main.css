@@ -72,6 +72,44 @@ body {
 /* page loader end */
 
 /* navbar start */
+.default_nav-bar.nav-fixed{
+    box-shadow: none;
+}
+.default_nav-bar .heder-nav .nav-list .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140.69%;
+    color: #7C7C7C;
+}
+.default_nav-bar .heder-nav .nav-list .nav-link-item.active .underline_link{
+    height: 4px;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    background: #E9F1F1;
+    max-width: 100%;
+}
+.default_nav-bar .heder-nav .nav-list  .nav-link-item{
+    margin-right: 20px;
+}
+.default_nav-bar .heder-nav .nav-list  .nav-link-item .underline_link{
+    height: 4px;
+    display: block;
+    width: 100%;
+    max-width: 0;
+    opacity: 0;
+    background: #E9F1F1;
+
+    transition: all .5s;
+}
+.default_nav-bar .heder-nav .nav-list .nav-link-item:hover .underline_link{
+    max-width: 100%;
+    opacity: 1;
+
+}
 .min_menu_block {
     position: absolute;
     left: 0;

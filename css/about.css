@@ -12,7 +12,11 @@
 
 .main_about {
     padding-top: 40px;
-    background: #23504B;
+    background-image: url(../img/about_bg.png);
+    background-position: 0px 100px;
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    background-color: #FFFBF6;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -35,7 +39,7 @@
 }
 
 .circle__item .circle__icon {
-    color: #fff;
+    color: #23504B;
     position: absolute;
     transform: rotate(337deg);
 }
@@ -47,7 +51,7 @@
 }
 
 .circle__spinner .path {
-    stroke: #fff;
+    stroke: #23504B;
     stroke-linecap: round;
     opacity: 0;
 }
@@ -62,6 +66,7 @@
 }
 
 .worker {
+    border-radius: 50%;
     position: relative;
     display: flex;
     margin: 4px auto;
@@ -74,7 +79,7 @@
 
 }
 
-.worker.worker__show .worket__about {
+.worker.worker__show .worker__about {
     z-index: 5;
     top: initial;
 
@@ -87,12 +92,13 @@
     height: 100%;
 }
 
-.worket__about {
+.worker__about {
     z-index: 0;
     display: flex;
     position: absolute;
     width: 225px;
-    background: rgba(35, 80, 75, .9);
+    border-radius: 50%;
+    background: rgba(35, 80, 75, .7);
     height: 91%;
     flex-direction: column;
     top: 400px;
@@ -100,7 +106,7 @@
 
 }
 
-.worket__about .worker__name {
+.worker__about .worker__name {
     font-size: 18px;
     color: #fff;
     text-align: center;
@@ -108,7 +114,7 @@
     font-weight: 400;
 }
 
-.worket__about .worker__role {
+.worker__about .worker__role {
     font-size: 14px;
     color: #fff;
     text-align: center;
@@ -589,8 +595,9 @@
 
 /*about us page css start*/
 .about_us_main_content{
-    margin-top: 150px;
-    margin-bottom: 80px;
+    background-color: #FFFBF6;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 .about_us_main_content .row{
     margin-top: 100px;

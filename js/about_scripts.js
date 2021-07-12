@@ -100,7 +100,7 @@ function IteracionHtmlCodeView3(idx, item, y) {
     if (y) {
         workers.innerHTML += `<div class="col-6 worker_main worker_${y}_col">
                         <div class="worker  worker_${y}">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
@@ -110,7 +110,7 @@ function IteracionHtmlCodeView3(idx, item, y) {
     } else {
         workers.innerHTML += `<div class="col-6 worker_main worker_${idx + 1}_col">
                         <div class="worker  worker_${idx + 1}">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
@@ -577,7 +577,7 @@ function IteracionHtmlCodeView1(idx, item, y) {
     if (y) {
         workers.innerHTML += `<div class="col-4 worker_main worker_${y}_col">
                         <div class="worker  worker_${y}">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
@@ -587,7 +587,7 @@ function IteracionHtmlCodeView1(idx, item, y) {
     } else {
         workers.innerHTML += `<div class="col-4 worker_main worker_${idx + 1}_col">
                         <div class="worker  worker_${idx + 1}">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
@@ -602,7 +602,7 @@ function IteracionHtmlCodeView2(idx, item, y) {
     if (y) {
         workers.innerHTML += `<div class="col-3 worker_main worker_${y}_col">
                         <div class="worker  worker_${y} ">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
@@ -612,7 +612,7 @@ function IteracionHtmlCodeView2(idx, item, y) {
     } else {
         workers.innerHTML += `<div class="col-3 worker_main worker_${idx + 1}_col">
                         <div class="worker  worker_${idx + 1} ">
-                        <div class="worket__about">
+                        <div class="worker__about">
                           <h2 class="worker__name">${item.name}</h2>
                           <p class="worker__role">${item.position}</p>
                         </div>
