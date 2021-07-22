@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/project.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/lib/OverlayScrollbars.css">
 
   <title>About Staff</title>
 </head>
@@ -60,12 +61,12 @@
       <div class="carousel_navigation">
         <div class="navigation_block">
           <ul class="carousel_view_number">
-            <li class="view_item 1 active"><span>01</span> <span class="active_line"></span></li>
-            <li class="view_item 2"><span>02</span> <span class="active_line"></span></li>
-            <li class="view_item 3"><span>03</span> <span class="active_line"></span></li>
-            <li class="view_item 4"><span>04</span> <span class="active_line"></span></li>
-            <li class="view_item 5"><span>05</span> <span class="active_line"></span></li>
-            <li class="view_item 6"><span></span> <span class="active_line"></span></li>
+            <li class="view_item active"><span>01</span> <span class="active_line"></span></li>
+            <li class="view_item"><span>02</span> <span class="active_line"></span></li>
+            <li class="view_item"><span>03</span> <span class="active_line"></span></li>
+            <li class="view_item"><span>04</span> <span class="active_line"></span></li>
+            <li class="view_item"><span>05</span> <span class="active_line"></span></li>
+            <li class="view_item"><span></span> <span class="active_line"></span></li>
 <!--            <li class="view_item">ALL WORKS</li>-->
           </ul>
         </div>
@@ -99,11 +100,19 @@
 
             </div>
             <div class="click_change_slide">
-              <span class="click_scroll_text">SCROLL TO EXPLORE</span>
-              <!--              <span class="click_scroll_text">Back to the top</span>-->
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 34">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z"></path>
-              </svg>
+              <div class="click_scroll click_decrement">
+                <span class="click_scroll_text">SCROLL TO EXPLORE</span>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 34">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z"></path>
+                </svg>
+              </div>
+              <div class="click_scroll click_incriment d-none">
+                <span class="click_scroll_text">Back to the top</span>
+                <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 34">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z"></path>
+                </svg>
+              </div>
+
             </div>
           </div>
         </div>
@@ -143,6 +152,7 @@
 <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <script src="./js/lib/jquery-1.11.0.min.js"></script>
 <script src="js/lib/jquery.touchSwipe.min.js"></script>
+<!--<script src="js/lib/OverlayScrollbars.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 </script>

@@ -11,6 +11,8 @@ var projectName = document.querySelector('.project_name'),
     carouselItem = document.querySelector('.carousel-inner'),
     sectionText = document.querySelectorAll('.section_text'),
     viewItem = document.querySelectorAll('.view_item'),
+    clickDecrement = document.querySelector('.click_decrement'),
+    clickIncriment = document.querySelector('.click_incriment'),
     projectData = [
         {
             title: 'High Security Spaces & Data Centers',
@@ -44,8 +46,8 @@ var projectName = document.querySelector('.project_name'),
         },
     ];
 var isMoving = false,
-    isMovingIncrement = false;
-iteracionValue = false;
+    isMovingIncrement = false,
+    iteracionValue = false;
 
 $(window).on('load', () => {
 
@@ -73,17 +75,30 @@ $(window).on('load', () => {
 $('.project_main').on('mousewheel', event => {
     console.log(isMovingIncrement);
     if (event.originalEvent.deltaY > 0) {
+
+        if (viewItem[3].className === 'view_item active'){
+            clickDecrement.className = 'click_scroll click_decrement d-none';
+            clickIncriment.className = 'click_scroll click_incriment d-flex';
+        }
         if (viewItem[4].className === 'view_item active' || !isMoving) {
             console.log('reedddd');
+
             return;
         } else {
+            isMoving = false;
             viewInitDecrement()
         }
     } else {
+        if (viewItem[1].className === 'view_item active'){
+            clickDecrement.className = 'click_scroll click_decrement d-flex';
+            clickIncriment.className = 'click_scroll click_incriment d-none';
+        }
+
         if (viewItem[0].className === 'view_item active' || !isMovingIncrement) {
             console.log('sdacadscasdc');
             return;
         } else {
+            isMovingIncrement = false;
             viewInitIncrement()
         }
     }
@@ -91,8 +106,8 @@ $('.project_main').on('mousewheel', event => {
 
 });
 
+
 function viewInitDecrement() {
-    isMoving = false;
     var y;
     for (let i = 0; i <= viewItem.length - 1; i++) {
         if (viewItem[i].className === 'view_item active') {
@@ -152,7 +167,7 @@ function viewInitDecrement() {
 
 function viewInitIncrement() {
     let y;
-    isMovingIncrement = false;
+
     for (let i = 4; i <= viewItem.length - 1; i--) {
         if (viewItem[i].className === 'view_item active') {
             viewItem[i].className = 'view_item';
@@ -202,12 +217,15 @@ function endAnimationIncrement() {
     isMovingIncrement = !isMovingIncrement;
 }
 function clickAnimationFunc() {
+    iteracionValue = true;
     isMoving = true;
-    isMovingIncrement = true;
+    isMovingIncrement = !isMovingIncrement;
 }
 
 viewItem.forEach((link,num) => {
     num = num + 1;
+    console.log(link);
+
     link.addEventListener('click', ()=> {
         isMoving = false;
         isMovingIncrement = false;
@@ -236,4 +254,12 @@ viewItem.forEach((link,num) => {
             .from('.count2', {opacity: 0, y: 100, duration: .3})
             .from('.count3', {opacity: 0, y: 100, duration: .5})
     })
+});
+
+clickDecrement.addEventListener('click', ()=>{
+    viewInitDecrement()
+});
+
+clickIncriment.addEventListener('click', ()=>{
+    viewInitIncrement()
 });
