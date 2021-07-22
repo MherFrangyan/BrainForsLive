@@ -1,6 +1,7 @@
 .project_main {
     height: 100vh;
     overflow: hidden;
+    background: #FFFBF6;
 }
 
 .project_page_content {
@@ -105,6 +106,7 @@
  }
 .project_slide .carousel-item {
     position: relative;
+    opacity: 1;
     height: calc(100vh - 160px);
     width: 100%
 }
@@ -113,7 +115,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 604px;
+    height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, .4);
 }
@@ -143,6 +145,7 @@
 
 .project_content_block .project_name {
     font-size: 56px;
+    opacity: 1;
     color: #23504B;
     margin-bottom: 24px;
 }
@@ -150,6 +153,7 @@
 .project_content_block .project_description {
     color: #a9a9a9;
     font-size: 14px;
+    opacity: 1;
     line-height: 1.71em;
 }
 
@@ -182,6 +186,7 @@
 
 .carousel_down_line .section_text {
     font-size: 16px;
+    opacity: 1;
     font-weight: 600;
 }
 

@@ -12,7 +12,7 @@
 
 .main_about {
     padding-top: 40px;
-    background-image: url(../img/about_bg.png);
+    /*background-image: url(../img/about_bg.png);*/
     background-position: 0px 100px;
     background-repeat-y: no-repeat;
     background-size: cover;
@@ -594,6 +594,9 @@
 
 
 /*about us page css start*/
+.about_us_main_content .container-fluid{
+    max-width: 1500px;
+}
 .about_us_main_content{
     background-color: #FFFBF6;
     padding-top: 70px;
