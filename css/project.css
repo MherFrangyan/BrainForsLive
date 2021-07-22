@@ -213,7 +213,7 @@
 .click_change_slide .click_decrement svg {
     width: 29px;
     transform: translateY(0px) rotate(0deg);
-    margin-top: 70px;
+    margin-top: 100px;
     text-align: center;
 
     transition: all .5s;
@@ -222,7 +222,7 @@
 .click_change_slide .click_incriment svg {
     width: 29px;
     transform: translateY(0px) rotate(180deg);
-    margin-top: 70px;
+    margin-top: 100px;
     text-align: center;
 
     transition: all .5s;
@@ -247,3 +247,11 @@
 }
 
 
+@media (min-width: 1700px) {
+    .project_content_block{
+        max-width: 800px;
+    }
+    .project_page_content .carousel_down_line{
+        width: 60%;
+    }
+}
