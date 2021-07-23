@@ -251,7 +251,130 @@
     .project_content_block{
         max-width: 800px;
     }
+    .project_main_block .project_description p{
+        max-width: 1000px;
+    }
     .project_page_content .carousel_down_line{
         width: 60%;
     }
 }
+
+/*portfolio page css start*/
+.portfolio_content{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.portfolio_content .carousel_navigation {
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 255px;
+}
+
+.portfolio_content .carousel_view_number{
+    width: 195px;
+    top: 50%;
+    position: fixed;
+    transform: translateY(-50%);
+}
+.portfolio_content .carousel_navigation .view_item .nav-link{
+    padding: 0;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    color: #bfbfbf;
+    margin-bottom: 13px;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+
+
+    transition: all .5s;
+}
+.portfolio_content .carousel_navigation .view_item .nav-link.active {
+    color: black;
+    background: transparent;
+}
+.portfolio_content .view_item .nav-link.active  .active_line{
+    background: #23504B;
+    width: 2px;
+    height: 100%;
+
+    transition: all .5s;
+}
+.project_main_block .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project_main_block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.project_main_block .project_name{
+    font-size: 56px;
+    color: #23504B;
+    margin-bottom: 24px;
+}
+
+.project_main_block .project_description{
+    color: #a9a9a9;
+    font-size: 14px;
+    line-height: 1.71em;
+}
+
+.project_main_block .project_description p{
+    max-width: 550px;
+}
+
+.project_main_block .project_screenshot{
+    position: relative;
+    overflow: hidden;
+}
+.project_main_block .project_screenshot .photo_fon{
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;opacity: 0;
+    cursor: pointer;
+
+    transition: all .5s;
+
+}
+.project_main_block .line_up{
+    width: 80%;
+    margin-right: auto;
+    padding: 35px;
+}
+.project_main_block .board_line{
+    background: #23504B;
+}
+
+.project_main_block .board_line p{
+    color: #FFFFFF;
+}
+.project_main_block .project_screenshot:hover .photo_fon{
+    background: rgba(0,0,0,.5);
+    opacity: 1;
+}
+.project_main_block .project_screenshot .photo_fon span{
+    color: #FFFFFF;
+}
+.project_main_block .project_screenshot img{
+    width: 100%;
+}
+/*portfolio page css end*/
