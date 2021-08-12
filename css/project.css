@@ -319,6 +319,8 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .project_main_block .project_name{
     font-size: 56px;
@@ -357,14 +359,26 @@
 }
 .project_main_block .line_up{
     width: 80%;
+    position: relative;
+
+    padding: 35px 0 35px;
+    top: -60px;
+
+}
+.line_up_left{
     margin-right: auto;
-    padding: 35px;
+}
+.line_up_right{
+    margin-left: auto;
 }
 .project_main_block .board_line{
     background: #23504B;
+    padding: 48px 15px 16px;
+    height: 130px;
 }
 
 .project_main_block .board_line p{
+    text-align: center;
     color: #FFFFFF;
 }
 .project_main_block .project_screenshot:hover .photo_fon{
@@ -377,4 +391,33 @@
 .project_main_block .project_screenshot img{
     width: 100%;
 }
+.click_scrolling{
+    display: flex;
+    justify-content: center;
+}
+.click_scrolling .click_md_change_slide svg{
+    fill:white;
+}
+.click_scrolling .click_change_slide{
+    width: initial;
+    height: initial;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.click_scrolling .click_change_slide svg {
+    width: 29px;
+    transform: translateY(0px) rotate(0deg);
+    margin-top: 100px;
+    text-align: center;
+
+    transition: all .5s;
+}
+
+
+.click_scrolling .click_change_slide:hover svg {
+    transform: translateY(10px);
+    fill: #23504B;
+}
+
 /*portfolio page css end*/

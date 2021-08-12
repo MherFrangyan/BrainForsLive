@@ -1,28 +1,39 @@
-var  Electricalview1 = document.querySelector('#Electricalview1'),
-    Electricalview2 = document.querySelector('#Electricalview2'),
-    Electricalview3 = document.querySelector('#Electricalview3'),
-    Electricalview4 = document.querySelector('#Electricalview4');
+var projectMainBlock = document.querySelectorAll('.project_main_block'),
+    clickScrolling = document.querySelector('.click_scrolling'),
+    increment = 1;
 
-
-document.querySelector('.portfolio_content').addEventListener('mousewheel', (event)=>{
+document.querySelector('.page_content').addEventListener('mousewheel', (event)=>{
     event.preventDefault();
-    console.log(event.srcElement.id);
-    console.log(event);
-    switch (event.srcElement.id) {
-        case 'Electricalview1':
-            Electricalview2.scrollIntoView({behavior: "smooth", block: "start"});
-            break;
-        case 'Electricalview2':
-            Electricalview3.scrollIntoView({behavior: "smooth", block: "start"});
-            break;
-        case 'Electricalview3':
-            Electricalview4.scrollIntoView({behavior: "smooth", block: "start"});
-            break;
-        // case 'Electricalview4':
-        //     Electricalview4.scrollIntoView({behavior: "smooth", block: "start"});
-        //     break;
-    }
+    if (event.deltaY > 0){
+        console.log(projectMainBlock.length);
+        console.log(increment);
+        if (projectMainBlock.length > increment){
+            projectMainBlock[increment].scrollIntoView({behavior: "smooth", block: "start"});
+            increment++
+        } else {
+            return;
+        }
+    } else if (event.deltaY < 0){
+        console.log(projectMainBlock.length);
+        console.log(increment);
 
+        if (projectMainBlock.length >= increment && increment > 1){
+            increment--;
+            console.log(increment);
+            console.log(projectMainBlock[increment-2]);
+            projectMainBlock[increment-1].scrollIntoView({behavior: "smooth", block: "start"});
+        }else {
+            return;
+        }
+    }
 });
-// gracy scroll-i jamanak stugum e id-ov u ijecnum tvyal block-i vra
-// urish tarberak gtnel ijecnelu hamar
+
+clickScrolling.addEventListener('click', ()=> {
+    projectMainBlock[increment].scrollIntoView({behavior: "smooth", block: "start"});
+    increment++;
+    console.log('inc scroll click',increment)
+});
+
+if (projectMainBlock.length === increment){
+        console.log('ascascascasc')
+}
