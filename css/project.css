@@ -398,6 +398,13 @@
 .click_scrolling .click_md_change_slide svg{
     fill:white;
 }
+.click_scrolling .click_change_slide.scroll_up svg{
+    transform: translateY(0px) rotate(180deg);
+}
+.click_scrolling .click_change_slide.scroll_up:hover svg{
+    transform: translateY(10px) rotate(180deg);
+}
+
 .click_scrolling .click_change_slide{
     width: initial;
     height: initial;

@@ -1,6 +1,7 @@
 //scroll bar
+var scrollInstance;
 document.addEventListener("DOMContentLoaded", function() {
-    OverlayScrollbars(document.querySelectorAll("body"), { });
+    scrollInstance = OverlayScrollbars(document.querySelectorAll("body"), { });
 });
 
 let vh = window.innerHeight * 0.01;
