@@ -209,7 +209,7 @@ body {
 .heder-nav {
     max-width: 1200px;
     position: fixed;
-    width: 75%;
+    width: 88%;
     z-index: 80;
     display: flex;
     align-items: center;

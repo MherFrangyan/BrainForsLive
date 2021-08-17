@@ -18,7 +18,9 @@
     .heder-nav .nav-list.media_hide{
         display: none; 
     }
-    
+    .heder-nav {
+        width: 75%;
+    }
     .menu_list li .nav-link{
         font-size: 24px !important;
     }
@@ -157,9 +159,43 @@
     }
         /* slide 2 end*/
 
-   
+    /*portfolio page  media start*/
+    div.project_main_block .line_up{
+        top: -60px;
+        width: 60%;
+        padding: 0;
+    }
+    div.project_main_block .board_line {
+        padding: 16px 0px 10px;
+        height: 60px;
+    }
 
-    
+    div.project_main_block .project_name {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .portfolio_content .navigation_block ul.carousel_view_number{
+        width: 195px;
+    }
+    .portfolio_content .carousel_navigation{
+        padding-left: 30px;
+        width: 225px;
+    }
+    .portfolio_content .click_scrolling .click_change_slide{
+        top: 84%;
+        left: 90%;
+    }
+    .portfolio_content .click_scrolling .click_change_slide svg{
+        width: 20px;
+    }
+
+    .portfolio_content .line_up_right,.line_up_left{
+        left: 0;
+    }
+    div.project_main_block .line_up .col-12{
+        padding-right: 15px;
+    }
+    /*portfolio page  media end*/
 }
 
 @media(max-width:767px) {
@@ -326,6 +362,15 @@
     .location_block .nav-tabs .nav-item .nav-link{
         padding: 12px 0 13px;
     }
+
+    /*portfolio page  media start*/
+    .portfolio_content .carousel_navigation{
+        padding-left: 0px;
+        width: 195px;
+
+    }
+
+    /*portfolio page  media end*/
 
 }
 
@@ -538,6 +583,40 @@
     .about_us_main_content img{
         width: 100%;
     }
+
+    /*portfolio page  media start*/
+    div.project_main_block .project_name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .project_main_block .project_description{
+        font-size: 12px;
+        line-height: 1.6em;
+    }
+    div.project_main_block .board_line{
+        padding: 12px 0px 5px;
+        height: 44px;
+    }
+    div.project_main_block .line_up{
+        top: -44px;
+        width: 70%;
+    }
+    .project_main_block .board_line p{
+        font-size: 12px;
+    }
+    .portfolio_content .navigation_block ul.carousel_view_number{
+        width: 180px;
+    }
+    .portfolio_content .carousel_navigation{
+        padding-left: 0px;
+        width: 180px;
+    }
+    .carousel_navigation .carousel_view_number{
+        padding-left: 20px;
+    }
+
+
+    /*portfolio page  media end*/
 }
 
 @media(max-width:480px) {
@@ -661,5 +740,35 @@
     .about_us_main_content div.row{
         margin-top: 40px;
     }
-
+    /*portfolio page  media start*/
+    .portfolio_content .carousel_navigation {
+        width: 130px;
+    }
+    .portfolio_content .navigation_block ul.carousel_view_number {
+        width: 130px;
+    }
+    .carousel_navigation .carousel_view_number {
+        padding-left: 5px;
+    }
+    .portfolio_content .view_item .nav-link.active .active_line{
+        height: 70%;
+    }
+    div.project_main_block .line_up {
+        top: -30px;
+        width: 90%;
+    }
+    div.project_main_block .board_line {
+        padding: 6px 0px 5px;
+        height: 30px;
+    }
+    .project_main_block .board_line p {
+        font-size: 10px;
+    }
+    div.project_main_block .project_name {
+        font-size: 20px;
+    }
+    .project_main_block .project_description {
+        font-size: 11px;
+    }
+    /*portfolio page  media end*/
 }

@@ -177,7 +177,7 @@ businessScrollDown.addEventListener('click', () => {
 });
 
 businessScrollUp.addEventListener('click', () => {
-    incrementHealth = 1;
+    incrementBusiness = 1;
     viewBusiness[0].scrollIntoView({behavior: "smooth", block: "start"});
     setTimeout(() => {
         businessScrollDown.classList.remove('d-none');
@@ -279,7 +279,7 @@ marketingScrollDown.addEventListener('click', () => {
 
 marketingScrollUp.addEventListener('click', () => {
     incrementMarketing = 1;
-    viewMedia[0].scrollIntoView({behavior: "smooth", block: "start"});
+    viewMarketing[0].scrollIntoView({behavior: "smooth", block: "start"});
     setTimeout(() => {
         marketingScrollDown.classList.remove('d-none');
         marketingScrollUp.classList.add('d-none');
@@ -455,7 +455,7 @@ document.querySelector('#v-other').addEventListener('mousewheel', (event) => {
                 otherScrollUp.classList.add('d-none');
             }, 300);
             incrementOther--;
-            viewOther[incrementGames - 1].scrollIntoView({behavior: "smooth", block: "start"});
+            viewOther[incrementOther - 1].scrollIntoView({behavior: "smooth", block: "start"});
         } else {
             return;
         }
