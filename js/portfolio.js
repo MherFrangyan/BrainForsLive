@@ -38,6 +38,9 @@ var viewElectrical = document.querySelectorAll('.view_electrical'),
 
 
 // electrical
+if(viewElectrical.length <= 1){
+    electricalScrollDown.classList.add('d-none');
+}
 document.querySelector('#v-electrical').addEventListener('mousewheel', (event) => {
     event.preventDefault();
     if (event.deltaY > 0) {
@@ -490,56 +493,81 @@ navLink.forEach(el => {
                 incrementElectrical = 1;
                 electricalScrollDown.classList.remove('d-none');
                 electricalScrollUp.classList.add('d-none');
+                if(viewElectrical.length <= 1){
+                    electricalScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'health':
                 incrementHealth = 1;
                 healthScrollDown.classList.remove('d-none');
                 healthScrollUp.classList.add('d-none');
+                if(viewHealth.length <= 1){
+                    healthScrollDown.classList.add('d-none');
+                }
                 break;
-
             case 'business-automation':
                 incrementBusiness = 1;
                 businessScrollDown.classList.remove('d-none');
                 businessScrollUp.classList.add('d-none');
+                if(viewBusiness.length <= 1){
+                    businessScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'marketing':
                 incrementMarketing = 1;
                 marketingScrollDown.classList.remove('d-none');
                 marketingScrollUp.classList.add('d-none');
+                if(viewMarketing.length <= 1){
+                    marketingScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'media':
                 incrementMedia = 1;
                 mediaScrollDown.classList.remove('d-none');
                 mediaScrollUp.classList.add('d-none');
+                if(viewMedia.length <= 1){
+                    mediaScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'food-beverages':
                 incrementFood = 1;
                 foodScrollDown.classList.remove('d-none');
                 foodScrollUp.classList.add('d-none');
+                if(viewFood.length <= 1){
+                    foodScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'travel':
                 incrementTravel = 1;
                 travelScrollDown.classList.remove('d-none');
                 travelScrollUp.classList.add('d-none');
+                if(viewTravel.length <= 1){
+                    travelScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'games':
                 incrementGames = 1;
                 gamesScrollDown.classList.remove('d-none');
                 gamesScrollUp.classList.add('d-none');
+                if(viewGames.length <= 1){
+                    gamesScrollDown.classList.add('d-none');
+                }
                 break;
 
             case 'other':
                 incrementOther = 1;
                 otherScrollDown.classList.remove('d-none');
                 otherScrollUp.classList.add('d-none');
+                if(viewOther.length <= 1){
+                    otherScrollDown.classList.add('d-none');
+                }
                 break;
         }
     });
-})
-
+});

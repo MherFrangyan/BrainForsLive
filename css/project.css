@@ -341,6 +341,7 @@
 .project_main_block .project_screenshot{
     position: relative;
     overflow: hidden;
+    max-height: 400px;
 }
 .project_main_block .project_screenshot .photo_fon{
     display: flex;
