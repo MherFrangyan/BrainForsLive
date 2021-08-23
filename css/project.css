@@ -260,6 +260,11 @@
 }
 
 /*portfolio page css start*/
+.view_item.disabled{
+    pointer-events: none;
+    opacity: .5;
+}
+
 .portfolio_content{
 
     width: 100%;
@@ -316,6 +321,7 @@
     justify-content: flex-start;
 }
 .project_main_block{
+    padding-top: 120px;
     height: 100vh;
     display: flex;
     align-items: center;
