@@ -627,9 +627,9 @@ function changeDataDown(id, down, click) {
             break;
     }
     animation1.from('.project_name', {opacity: 0, y: -100, duration: .4})
-        .from('.project_img', {opacity: 0, y: -500, duration: .2})
-        .from('.project_description', {opacity: 0, y: -100, duration: .4})
-        .from('.board_line', {opacity: 0, x: -100, duration: .4})
+        .from('.project_img', {opacity: 0, y: -500, duration: .4})
+        .from('.project_description', {opacity: 0, y: -100, duration: .5})
+        .from('.board_line', {opacity: 0, x: -100, duration: .5})
         .from('.first_text', {opacity: 0, y: -100, duration: .3})
         .from('.second_text', {opacity: 0, y: -100, duration: .5});
 
