@@ -43,7 +43,11 @@ let tl1 = gsap.timeline({onComplete: tl1End}),
 
         {img: 'img/staff/Shahe.jpg', name: 'Shahe Shahinyan', position: 'Mobile Developer'},
         {img: 'img/staff/Karen.jpg', name: 'Karen Gasparyan', position: 'Backend Developer'},
-        {img: 'img/staff/yOU.png', name: 'LastName FirstName', position: 'Developer'},
+        {img: 'img/staff/Arshak.jpg', name: 'Arshak Gabrielyan', position: 'Backend Developer'},
+        {img: 'img/staff/Sergey.jpg', name: 'Sergey Galstyan', position: 'CTO'},
+        {img: 'img/staff/Hayk.jpg', name: 'Hayk Nazaryan', position: 'Backend Developer'},
+        {img: 'img/staff/Hovo.jpg', name: 'Hovhannes Varosyan', position: 'Mobile Developer'},
+        {img: 'img/staff/Roza.jpg', name: 'Roza Petrosyan', position: 'Backend Developer'},
     ],
     helloArray = [
         'բարև', 'Hallå', '今日は', 'שלום', 'Cześć', 'Bonjour', 'สวัสดี', 'Terve', '안녕', 'Привет',
@@ -157,24 +161,24 @@ function onLoadViewContent() {
         }
     });
     if (window.innerWidth > 1160) {
-        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},)
-            .from('.worker_5, .worker__photo5', {opacity: 0, y: -200, duration: .4},)
-            .from('.worker_6, .worker__photo6', {opacity: 0, x: -200, duration: .5},)
-            .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .4},);
+        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},)
+            .from('.worker_5, .worker__photo5', {opacity: 0, y: -200, duration: .3},)
+            .from('.worker_6, .worker__photo6', {opacity: 0, x: -200, duration: .3},)
+            .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .3},);
     } else if (window.innerWidth < 1160 && window.innerWidth > 850) {
-        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},)
-            .from('.worker_5, .worker__photo5', {opacity: 0, y: -200, duration: .4},);
+        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},)
+            .from('.worker_5, .worker__photo5', {opacity: 0, y: -200, duration: .3},);
     } else if (window.innerWidth < 850) {
-        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},);
+        tl1.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+            .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+            .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+            .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},);
     }
 
 }
@@ -236,24 +240,24 @@ function someFunction() {
             }
         });
         if (window.innerWidth > 1160) {
-            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
-                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},)
-                .from('.worker_6, .worker__photo6', {opacity: 0, x: 300, duration: .5},)
-                .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .4},);
+            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .3},)
+                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .3},)
+                .from('.worker_6, .worker__photo6', {opacity: 0, x: 300, duration: .3},)
+                .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .3},);
         } else if (window.innerWidth < 1160 && window.innerWidth > 850) {
-            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
-                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},);
+            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .3},)
+                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .3},);
         } else if (window.innerWidth < 850) {
-            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},);
+            tl2.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},);
         }
     } else if (tl2EndBoolean) {
         workers.innerHTML = '';
@@ -296,24 +300,24 @@ function someFunction() {
             }
         });
         if (window.innerWidth > 1160) {
-            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
-                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},)
-                .from('.worker_6, .worker__photo6', {opacity: 0, x: 300, duration: .5},)
-                .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .4},);
+            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .3},)
+                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .3},)
+                .from('.worker_6, .worker__photo6', {opacity: 0, x: 300, duration: .3},)
+                .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .3},);
         } else if (window.innerWidth < 1160 && window.innerWidth > 850) {
-            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
-                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},)
+            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .3},)
+                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .3},)
         } else if (window.innerWidth < 850) {
-            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},);
+            tl3.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},);
         }
 
     } else if (tl3EndBoolean) {
@@ -359,24 +363,24 @@ function someFunction() {
 
         // gsap media
         if (window.innerWidth > 1160) {
-            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
+            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
             // .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
             // .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},)
             // .from('.worker_6, .worker__photo6', {opacity: 0, x: 300, duration: .5},)
             // .from('.worker_7, .worker__photo7', {opacity: 0, y: -200, duration: .4},);
         } else if (window.innerWidth < 1160 && window.innerWidth > 850) {
-            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .4},)
-                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .4},)
+            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: -100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: -200, duration: .3},)
+                .from('.worker_5, .worker__photo5', {opacity: 0, y: 200, duration: .3},)
         } else if (window.innerWidth < 850) {
-            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},);
+            tl4.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},);
         }
     } else if (tl4EndBoolean) {
         workers.innerHTML = '';
@@ -386,7 +390,7 @@ function someFunction() {
         } else if (window.innerWidth < 1160 && window.innerWidth > 850) {
             let y = 0;
             staffArray.forEach((item, idx) => {
-                if (idx < 20 || idx >= 25) {
+                if (idx < 20 || idx >= 30) {
                     console.log('mecc 55');
                     return;
                 } else {
@@ -398,10 +402,13 @@ function someFunction() {
                     }
                 }
             });
-            tl5.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .7})
-                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .7})
-                .from('.worker_3, .worker__photo3', {opacity: 0, x: 200, duration: .7})
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .7});
+            tl5.from('.worker_1,  .worker__photo1', {opacity: 0, scaleX: 0.5, scaleY: 0.5, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_5, .worker__photo2', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_6, .worker__photo3', {opacity: 0, x: 200, duration: .3})
+                .from('.worker_7, .worker__photo4', {opacity: 0, x: 200, duration: .3});
         } else if (window.innerWidth < 850) {
             let z = 0;
             staffArray.forEach((item, idx) => {
@@ -414,10 +421,10 @@ function someFunction() {
                     }
                 }
             });
-            tl5.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .4},)
-                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .4},);
+            tl5.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, y: 100, duration: .3},)
+                .from('.worker_4, .worker__photo4', {opacity: 0, x: 200, duration: .3},);
         }
 
     } else if (tl5EndBoolean) {
@@ -437,10 +444,10 @@ function someFunction() {
                     }
                 }
             });
-            tl6.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .4})
-                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_3, .worker__photo3', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4})
-                .from('.worker_4, .worker__photo4', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .4});
+            tl6.from('.worker_1,  .worker__photo1', {opacity: 0, x: -200, duration: .3})
+                .from('.worker_2, .worker__photo2', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_3, .worker__photo3', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3})
+                .from('.worker_4, .worker__photo4', {opacity: 0, scaleX: 0.3, scaleY: 0.2, duration: .3});
         }
 
     } else if (tl6EndBoolean) {

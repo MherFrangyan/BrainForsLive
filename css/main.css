@@ -75,6 +75,13 @@ body {
 .default_nav-bar.nav-fixed{
     box-shadow: none;
 }
+.heder-nav .nav-list.menu_list .dropdown_links{
+    position: initial;
+    width: 420px;
+}
+.heder-nav .nav-list.menu_list .nav-link-dropdown:hover .dropdown_links{
+    height: 175px;
+}
 .default_nav-bar .heder-nav .nav-list .nav-link {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -109,6 +116,23 @@ body {
     max-width: 100%;
     opacity: 1;
 
+}
+.nav-link-dropdown {
+    position: relative;
+}
+.nav-link-dropdown:hover .dropdown_links{
+    height: 80px;
+    overflow: initial;
+    opacity: 1;
+}
+.nav-link-dropdown .dropdown_links{
+    list-style: none;
+    position: absolute;
+    width: 205px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s;
 }
 .min_menu_block {
     position: absolute;
