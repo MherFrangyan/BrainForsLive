@@ -37,7 +37,10 @@
         left: 50%;
         transform: translateX(-50%);
         top: 50%;
-        z-index: 99;
+        z-index: 90;
+    }
+    .carousel_staff .loader_carousel i {
+        width: 25px;
     }
     .circle__spinner .path {
         stroke: #23504B !important;
@@ -95,7 +98,7 @@
 /*}*/
 @media (max-width: 991px){
     .heder-nav .nav-toggle {
-        right: 80px !important;
+        right: 0px !important;
     }
 }
 

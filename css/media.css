@@ -40,6 +40,12 @@
         width:35px;
         height: 40px;
     }
+    .default_nav-bar .heder-nav .nav-list .nav-link-item{
+        margin-right: 0px;
+    }
+    .heder-nav .nav-list.menu_list .nav-link-dropdown:hover .dropdown_links {
+        height: 105px;
+    }
     /* navbar start */
 
      /* page loader start */
@@ -570,7 +576,7 @@
         height: 650px;
     }
     .heder-nav .nav-toggle{
-        right: 17px !important;
+        right: -70px !important;
     }
     .home_page_navbar .heder-nav .nav-toggle{
         right: -50px !important;
@@ -620,6 +626,9 @@
 }
 
 @media(max-width:480px) {
+    .heder-nav .nav-toggle {
+        right: -50px !important;
+    }
     .mian_slider ._slide.slide_1 .more_about_block .about_content{
         max-width: 235px;
         left: 10px;
