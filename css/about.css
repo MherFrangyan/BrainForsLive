@@ -12,7 +12,7 @@
 .carousel_block{
      max-width: 1200px;
      position: relative;
-    margin: auto;
+    margin: 0 auto 100px;
 }
 .loader_carousel i {
     font-size: 25px;

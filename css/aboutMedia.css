@@ -23,6 +23,7 @@
 @media (max-width: 767px) {
     .main_about .carousel_block{
         max-width: 585px;
+        margin: auto;
     }
     .carousel_block .workers_block{
         /*margin-top: 74px;*/
@@ -69,7 +70,7 @@
         max-width: 142px;
     }
     .carousel_staff .loader_carousel{
-        top: 51%;
+        top: 50%;
     }
 }
 /*@media(max-width:1159px) {*/
