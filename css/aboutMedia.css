@@ -66,6 +66,17 @@
     }
 }
 @media (max-width: 400px) {
+    .worker_content .worker_about{
+        width: 125px;
+        top: 10px;
+    }
+    .worker_content .worker_about .worker__name{
+        font-size: 14px;
+    }
+    .worker_content .worker_about .worker__role{
+        font-size: 12px;
+        margin: 0;
+    }
     .workers_block .worker_content{
         max-width: 142px;
     }
