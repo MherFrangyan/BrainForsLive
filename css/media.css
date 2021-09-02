@@ -5,47 +5,59 @@
 }
 @media(min-width:992px){
     /* navbar start */
-    .heder-nav .nav-list.media_hide{
-        display: flex !important;
-    }
+
+
+
+    /*.heder-nav .nav-list.media_hide{*/
+    /*    display: flex !important;*/
+    /*}*/
+
+
     /* navbar end */
 }
-@media(max-width:991px) {
+@media(max-width:992px) {
+    .header-nav .nav-list{
+        display: none!important;
+    }
+    .nav-toggle{
+        display: block!important;
+    }
+
      /* navbar start */
-     .nav-toggle{
-        right: -50px !important;
-    }
-    .heder-nav .nav-list.media_hide{
-        display: none; 
-    }
-    .heder-nav {
-        width: 75%;
-    }
-    .menu_list li .nav-link{
-        font-size: 24px !important;
-    }
-    .nav-fixed .min_menu_block .close_menu{
-        width: 34px;
-        height: 38px;
-        font-size: 14px
-    }
-    .nav-fixed .nav-toggle span{
-        width: 24px;
-        height: 2px
-    }
-    .nav-fixed .nav-toggle .small_line{
-        width: 18px;
-    }
-    .navbar-brand svg{
-        width:35px;
-        height: 40px;
-    }
-    .default_nav-bar .heder-nav .nav-list .nav-link-item{
-        margin-right: 0px;
-    }
-    .heder-nav .nav-list.menu_list .nav-link-dropdown:hover .dropdown_links {
-        height: 105px;
-    }
+    /* .nav-toggle{*/
+    /*    right: -50px !important;*/
+    /*}*/
+    /*.heder-nav .nav-list.media_hide{*/
+    /*    display: none; */
+    /*}*/
+    /*.heder-nav {*/
+    /*    width: 75%;*/
+    /*}*/
+    /*.menu_list li .nav-link{*/
+    /*    font-size: 24px !important;*/
+    /*}*/
+    /*.nav-fixed .min_menu_block .close_menu{*/
+    /*    width: 34px;*/
+    /*    height: 38px;*/
+    /*    font-size: 14px*/
+    /*}*/
+    /*.nav-fixed .nav-toggle span{*/
+    /*    width: 24px;*/
+    /*    height: 2px*/
+    /*}*/
+    /*.nav-fixed .nav-toggle .small_line{*/
+    /*    width: 18px;*/
+    /*}*/
+    /*.navbar-brand svg{*/
+    /*    width:35px;*/
+    /*    height: 40px;*/
+    /*}*/
+    /*.default_nav-bar .heder-nav .nav-list .nav-link-item{*/
+    /*    margin-right: 0px;*/
+    /*}*/
+    /*.heder-nav .nav-list.menu_list .nav-link-dropdown:hover .dropdown_links {*/
+    /*    height: 105px;*/
+    /*}*/
     /* navbar start */
 
      /* page loader start */
@@ -180,6 +192,9 @@
         font-size: 40px;
         margin-bottom: 20px;
     }
+    .project_main_block .description{
+        padding-left: 15px;
+    }
     .portfolio_content .navigation_block ul.carousel_view_number{
         width: 195px;
     }
@@ -202,9 +217,38 @@
         padding-right: 15px;
     }
     /*portfolio page  media end*/
+    /*what we do start*/
+    .what_we_do .page_content {
+        padding: 30px 0;
+    }
+    .what_we_do .project_main_block{
+        padding-top: 40px;
+    }
+    /*what we do end*/
 }
 
 @media(max-width:767px) {
+    /*nav-bar media css start*/
+    .navbar-brand img{
+        width: 80%;
+    }
+    .min_menu_block .close_menu{
+        width: 50px;
+        height: 44px;
+        font-size: 18px;
+    }
+    .nav-toggle span{
+        width: 25px;
+        height: 2px;
+        margin-bottom: 5px;
+    }
+    .nav-toggle:hover span{
+        margin: 0px auto 6px;
+    }
+    .nav-toggle .small_line{
+        width: 15px;
+    }
+    /*nav-bar media css end*/
     /* page loader start*/
     .loading-custom-animation .img_content{
         left: 40%;
@@ -582,13 +626,6 @@
         right: -50px !important;
     }
 
-    /*about us page css start*/
-    div.about_us_main_content{
-        margin-top: 80px;
-    }
-    .about_us_main_content img{
-        width: 100%;
-    }
 
     /*portfolio page  media start*/
     div.project_main_block .project_name {
@@ -621,14 +658,40 @@
         padding-left: 20px;
     }
 
-
     /*portfolio page  media end*/
+
+    /*what we do start*/
+    .what_we_do .page_content {
+        padding: 60px 0;
+    }
+    /*what we do end*/
 }
 
 @media(max-width:480px) {
-    .heder-nav .nav-toggle {
-        right: -50px !important;
+    /*nav-bar media css start*/
+    .header-nav .nav-list.menu_list .nav-link{
+        font-size: 15px;
     }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navbar-brand img {
+        width: 50%;
+    }
+    .nav-toggle:hover span{
+        margin: 1px auto 4px;
+    }
+    .nav-toggle .large_line{
+        margin-bottom: 4px;
+    }
+    .nav-toggle .small_line{
+        margin-bottom: 1px;
+    }
+    .nav-toggle span{
+        width: 21px;
+        margin-bottom: 3px;
+    }
+    /*nav-bar media css end*/
     .mian_slider ._slide.slide_1 .more_about_block .about_content{
         max-width: 235px;
         left: 10px;
@@ -742,13 +805,7 @@
         width: 95px;
     }
 
-    /*about us page css start*/
-    .about_us_main_content .team_content p{
-        font-size: 14px;
-    }
-    .about_us_main_content div.row{
-        margin-top: 40px;
-    }
+
     /*portfolio page  media start*/
     .portfolio_content .carousel_navigation {
         width: 130px;

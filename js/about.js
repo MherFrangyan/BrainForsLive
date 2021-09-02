@@ -62,7 +62,7 @@ function addClass() {
     });
 }
 
-let noneElementsLength = 0;
+let noneElementsLength = [];
 
 changeContent('decrement', '');
 
@@ -82,13 +82,13 @@ function changeContent(decrement, count) {
         if (count === 1) {
             iterationCount = workerContent.length - workerContent.length;
         } else if (count > 1) {
-            iterationCount = iterationCount + noneElementsLength - workerContent.length * 2;
+            iterationCount = iterationCount + noneElementsLength.length - workerContent.length * 2;
         }
     }
     workerContent.forEach((el) => {
         if (iterationCount >= staffArray.length) {
             el.style.display = 'none';
-            noneElementsLength++;
+            noneElementsLength.push(el);
             return
         } else {
             el.style.display = 'block';
@@ -118,7 +118,6 @@ mainAbout.addEventListener('mousewheel', e => {
             } else {
                 changeContent('decrement', viewCount);
             }
-            changeContent('decrement', viewCount);
 
         } else if (e.deltaY < 0) {
             if (iterationCount === workerContent.length) {
@@ -166,7 +165,6 @@ function handleTabletChange(e) {
         }
         workerContent = document.querySelectorAll('.worker_content')
     } else if (e.matches && e.media === '(max-width: 767px)') {
-        console.log(workerContent);
         if (workerContent.length <= 5) {
             lastTag = document.querySelectorAll('.worker_content:last-child');
         } else {
@@ -203,6 +201,9 @@ function ScrollAnimationFunc() {
 
 
 function ScrollAnimationFunc2() {
+    document.querySelectorAll('.worker_about').forEach(el => {
+        el.style.display = 'flex';
+    });
     setTimeout(() => {
         scrollStop = true;
     }, 500);

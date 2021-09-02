@@ -17,9 +17,6 @@
 }
 
 @media(max-width:991px) {
-    .project_nav-toggle.heder-nav .nav-toggle{
-        right: 0 !important;
-    }
     .carousel_content .about_project{
         flex-direction: column-reverse;
         padding-left: 0;
@@ -103,18 +100,11 @@
     .project_content_block{
         width: initial;
     }
-    .project_nav-toggle.heder-nav .menu_list{
-        left: 53% !important;
-    }
+
 }
 
 @media(max-width:576px) {
-    .project_nav-toggle.heder-nav .nav-toggle {
-        right: -100px !important;
-    }
-    .project_nav-toggle.heder-nav .menu_list{
-        left: 62% !important;
-    }
+
     .project_content_block{
         top: 105px;
     }
@@ -132,9 +122,6 @@
 }
 
 @media(max-width:480px) {
-    .project_nav-toggle.heder-nav .nav-toggle{
-        right: -55px !important;
-    }
     .project_content_block{
         top: 160px;
         left: 25%;
