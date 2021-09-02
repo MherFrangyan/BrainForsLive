@@ -32,6 +32,8 @@
     transform: translateX(-5px);
 }
 .main_about {
+    display: flex;
+    align-items: center;
     background-color: #FFFBF6;
     height: 100%;
     overflow: hidden;
@@ -72,8 +74,8 @@
     align-items: center;
     justify-content: flex-end;
     left: 23%;
-    top: 62px;
-    transform: translateX(-21%)
+    top: -40px;
+    transform: translate(-21%,-50%);
 }
 
 .worker_about {
@@ -104,7 +106,7 @@
     z-index: 2;
 }
 .workers_block{
-    margin-top: 140px;
+    /*margin-top: 140px;*/
     display: flex;
     justify-content: space-between;
 }

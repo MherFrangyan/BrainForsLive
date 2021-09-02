@@ -25,7 +25,7 @@
         max-width: 585px;
     }
     .carousel_block .workers_block{
-        margin-top: 74px;
+        /*margin-top: 74px;*/
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -35,7 +35,7 @@
     .carousel_staff .loader_carousel {
         justify-content: center;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%,-50%);
         top: 50%;
         z-index: 90;
     }
@@ -51,9 +51,9 @@
     .main_about .carousel_block{
         max-width: 480px;
     }
-    .carousel_block .workers_block{
-        margin-top: 78px;
-    }
+    /*.carousel_block .workers_block{*/
+    /*    margin-top: 78px;*/
+    /*}*/
     .workers_block .worker_content{
         max-width: 175px;
     }
