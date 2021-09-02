@@ -66,6 +66,9 @@
     }
 }
 @media (max-width: 400px) {
+    .carousel_staff .loader_carousel i{
+        width: 10px;
+    }
     .worker_content .worker_about{
         width: 125px;
         top: 10px;
