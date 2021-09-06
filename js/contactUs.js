@@ -17,7 +17,7 @@ if (location.pathname === "/BrainForsLive/contactUs.html") {
         }
         setTimeout(()=>{
             loopFuncChangeText()
-        },2000)
+        },1500)
 
     }
     loopFuncChangeText()

@@ -32,10 +32,15 @@
     transform: translateX(-5px);
 }
 .main_about {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+
     display: flex;
     align-items: center;
     background-color: #FFFBF6;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -289,13 +294,22 @@
 }
 
 .location_block {
+    position: relative;
     background: url("../img/Google-Maps.png") center center no-repeat;
     background-size: cover;
-    height: 1080px;
     padding-top: 70px;
+    height: 900px;
+}
+.location_block iframe{
+    border: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    position: absolute;
 }
 
 .location_block .nav-tabs {
+    position: relative;
     border: none;
 }
 .location_block .nav_tab_block {
@@ -333,11 +347,14 @@
 }
 
 .use_office {
+    position: relative;
     background: #23504B;
-    height: 400px;
     display: flex !important;
     align-items: center;
     justify-content: center;
+}
+.use_office.active.show{
+    height: 400px;
 }
 
 .use_office .coming_soon {
@@ -422,6 +439,9 @@
 
 
 /*about us page css start*/
+.about_us_main_content{
+    overflow: hidden;
+}
 .about_us_main_content .header_block img{
     width: 100%;
 }
