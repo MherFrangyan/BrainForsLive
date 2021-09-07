@@ -372,6 +372,8 @@
     position: relative;
     padding: 35px 0 35px;
     top: -125px;
+    position: relative;
+    z-index: 8;
 }
 .project_main_block .line_up .col-12{
     padding-right: 0;
@@ -399,13 +401,21 @@
 }
 .project_main_block .board_line{
     background: rgb(35, 80, 75);
-    padding: 33px 15px 16px;
+    padding: 20px 15px 16px;
     height: 90px;
+}
+.project_main_block .board_line .board_line_title{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .project_main_block .board_line p{
     text-align: center;
     color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 100;
 }
 .project_main_block .project_screenshot:hover .photo_fon{
     background: rgba(0,0,0,.5);
@@ -453,4 +463,9 @@
     fill: #23504B;
 }
 
+@media (max-width: 380px) {
+    div.project_main_block .line_up {
+       display: none;
+    }
+}
 /*portfolio page css end*/

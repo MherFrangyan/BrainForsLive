@@ -533,14 +533,16 @@
     position: relative;
     height: 100%;
 }
-.blog_board .right_news_block .last_block{
-    position: absolute;
-    bottom: 0;
+.blog_board .right_news_block .last_block .card{
+    height: 96%;
 }
+/*.blog_board .right_news_block .last_block{*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*}*/
 .blog_board .right_news_block .card{
     flex-direction: row;
-
-    height: 230px;
+    height: 100%;
 }
 .blog_board .right_news_block .card-body .card-title{
     white-space: nowrap;
@@ -557,7 +559,7 @@
 }
 .about_us_main_content .article{
     background: #F9F9F9;
-    padding: 100px 45px;
+    padding: 80px 45px;
     margin-top: 15px;
 }
 .about_us_main_content .article .article_main_content{
@@ -565,10 +567,16 @@
     margin: auto;
 }
 .about_us_main_content .article .article_main_content .main_text{
-    max-width: 775px;
+    /*max-width: 775px;*/
     text-align: center;
     margin: auto;
     color: #615E5E;
+}
+.about_us_main_content .article .article_main_content .main_text span{
+    font-size: 43px;
+    margin-right: 20px;
+    display: inline-block;
+    text-transform: uppercase;
 }
 .about_us_main_content .aside{
     padding: 90px 45px 190px;
@@ -678,6 +686,10 @@
     .about_us_main_content .article{
         padding: 35px 18px;
     }
+    .about_us_main_content .article .article_main_content .main_text span{
+        font-size: 30px;
+        margin-right: 10px;
+    }
     .about_us_main_content .aside{
         padding: 40px 18px;
     }
@@ -741,9 +753,9 @@
     .about_us_main_content .aside{
         padding: 20px 18px;
     }
-    .about_us_main_content .article .article_main_content .main_text{
-        font-size: 12px;
-        text-align: justify;
+    .about_us_main_content .article .article_main_content .main_text span{
+        font-size: 20px;
+        margin-right: 5px;
     }
     .about_us_main_content .aside .board_text{
         font-size: 12px;

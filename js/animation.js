@@ -28,7 +28,7 @@ function animationFunc() {
         });
     },200);
     anim.from('.project_name', {opacity: 0, y: -100, duration: .3})
-        .from('.project_img', {opacity: 0, y: -500, duration: .3})
+        .from('.project_img', {opacity: 0, y: -500, ease: "power3", duration: .5})
         .from('.project_description', {opacity: 0, y: -100, duration: .4})
         .from('.board_line', {opacity: 0, x: -100, duration: .3})
         .from('.first_text', {opacity: 0, y: -100, duration: .2})

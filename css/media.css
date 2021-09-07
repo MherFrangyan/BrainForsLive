@@ -184,7 +184,7 @@
         padding: 0;
     }
     div.project_main_block .board_line {
-        padding: 16px 0px 10px;
+        padding: 9px 0px 10px;
         height: 60px;
     }
 
@@ -414,10 +414,20 @@
     }
 
     /*portfolio page  media start*/
+    div.project_main_block .line_up{
+        width: 65%;
+    }
+
     .portfolio_content .carousel_navigation{
         padding-left: 0px;
         width: 195px;
-
+    }
+    .project_main_block .board_line .board_line_title{
+        font-size: 13px;
+    }
+    div.project_main_block .board_line{
+        padding: 8px 0px 6px;
+        height: 60px;
     }
 
     /*portfolio page  media end*/
@@ -637,15 +647,19 @@
         line-height: 1.6em;
     }
     div.project_main_block .board_line{
-        padding: 12px 0px 5px;
+        padding: 7px 0px 4px;
         height: 44px;
     }
     div.project_main_block .line_up{
         top: -44px;
         width: 70%;
     }
+    .project_main_block .board_line .board_line_title{
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
     .project_main_block .board_line p{
-        font-size: 12px;
+        font-size: 9px;
     }
     .portfolio_content .navigation_block ul.carousel_view_number{
         width: 180px;
@@ -820,12 +834,12 @@
         height: 70%;
     }
     div.project_main_block .line_up {
-        top: -30px;
+        top: -40px;
         width: 90%;
     }
     div.project_main_block .board_line {
         padding: 6px 0px 5px;
-        height: 30px;
+        height: 40px;
     }
     .project_main_block .board_line p {
         font-size: 10px;

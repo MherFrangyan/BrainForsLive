@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800&display=swap');
 * {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -126,9 +128,9 @@ body {
 }
 
 .nav-bar_container{
-    max-width: 1936px;
+    max-width: 1490px;
     margin: auto;
-    padding: 0 18px;
+    padding: 0 30px;
 }
 .nav-link-dropdown {
     position: relative;
@@ -628,7 +630,7 @@ body {
 }
 
 .mian_slider.main_slide2_more .slide_2 .more_about_block {
-    max-width: 800px;
+    max-width: 50%;
     z-index: 0;
 }
 .mian_slider .slide_2 .more_about_block {
@@ -685,7 +687,7 @@ body {
 }
 
 .mian_slider .slide_3 .more_about_block .about_content {
-    max-width: 77%;
+    max-width: 70%;
     margin: auto;
     min-height: 300px;
     max-height: 400px;

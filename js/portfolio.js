@@ -80,7 +80,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         workshop, get the device shipped and follow all steps and costs online.`,
                 img: './img/porfolio/myredgo.png',
                 url: 'https://www.myredgo.com/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
             },
         ],
         health: [
@@ -93,7 +93,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         order one or many items in one order.`,
                 img: './img/porfolio/belleshop.png',
                 url: 'http://www.belleshop.ch/en/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -107,7 +107,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         monitoring medical devices.`,
                 img: './img/porfolio/uman_amedical.png',
                 url: 'https://umanamedical.com/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
             },
         ],
         'business-automation': [
@@ -119,7 +119,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         and making payments via online payment systems.`,
                 img: './img/porfolio/suteria.png',
                 url: 'https://www.suteria.ch/de/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -136,7 +136,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         communication between event information seekers and event organizers.`,
                 img: './img/porfolio/mapplo.png',
                 url: 'javascript:void(0)',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -149,7 +149,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         business voicemail, managing personal settings, and more.`,
                 img: './img/porfolio/LineX.png',
                 url: 'javascript:void(0)',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -163,7 +163,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         broadcast on TV and watch them online.`,
                 img: './img/porfolio/shoghakat.png',
                 url: 'http://www.shoghakat.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -174,7 +174,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         etc. User can easily find the latest news in few seconds with one click.`,
                 img: './img/porfolio/shrjapat.png',
                 url: 'http://shrjapat.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -192,7 +192,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         3. A customer of a Bob.AI client and accessing the app for CRM functions`,
                 img: './img/porfolio/bobai.png',
                 url: 'https://play.google.com/store/apps/details?id=com.bob.ai',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -206,7 +206,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         transfers.`,
                 img: './img/porfolio/PolarAds.png',
                 url: 'http://polarads.com/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -218,7 +218,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         online orders and reserving tables.`,
                 img: './img/porfolio/yaghli.png',
                 url: 'http://yaghlihouse.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -228,7 +228,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         IDram. There is also a functionality of reserving tables.`,
                 img: './img/porfolio/ponchik_monchik.png',
                 url: 'https://ponchikmonchik.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -238,7 +238,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         Armenian, Russian and English languages.`,
                 img: './img/porfolio/foodtime.png',
                 url: 'http://foodtime.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -250,7 +250,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         sections for tour packages.`,
                 img: './img/porfolio/artavan.png',
                 url: 'http://artavan.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -267,7 +267,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         game, as long as the time has not exceeded 90 min.`,
                 img: './img/porfolio/mozart.png',
                 url: 'javascript:void(0)',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -278,7 +278,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         APIs are integrated including: slack, trello, game analytic, google, youtube, Instagram.`,
                 img: './img/porfolio/koba_games.png',
                 url: 'https://www.kobgames.com/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -291,7 +291,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         shows where the company is situated and how far it is from the user’s location.`,
                 img: './img/porfolio/stageup.png',
                 url: 'https://webapp.stage-app.nl/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -305,7 +305,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         criteria, quality specifications, or just a list of things to do related to that task.`,
                 img: './img/porfolio/plan_hammer.png',
                 url: 'https://planhammer.io/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -317,7 +317,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         with an overview of the project.`,
                 img: './img/porfolio/BPI.png',
                 url: 'https://bpioutplacementservices.com/login/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -332,7 +332,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         environment.`,
                 img: './img/porfolio/Enterprise_Plus.png',
                 url: 'http://www.enterpriseplus.tools/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -342,7 +342,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         each championship with its list of winners their scores and ranks.`,
                 img: './img/porfolio/arabe_esports.png',
                 url: 'https://arabesports.com/en',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
             {
@@ -352,7 +352,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         information about all their trainings, services and contact them if needed.`,
                 img: './img/porfolio/Enterprise_Plus.png',
                 url: 'http://bac.am/',
-                info: ['lorem1', 'lorem2']
+                info: ['PHP, Angular 2+', '8']
 
             },
         ],
@@ -758,6 +758,7 @@ navLink.forEach(el => {
                     changeDataDown(idName, true, 'click');
                     if (portfolioData[idName].length === 1) {
                         document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                        document.querySelector(`#v-${idName} .scroll_up`).classList.add('d-none');
                     }
                     break;
 
