@@ -10,7 +10,7 @@
     width: initial;
 }
 .carousel_block{
-     max-width: 1200px;
+     max-width: 1400px;
      position: relative;
     margin: 0 auto 100px;
 }
@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: flex-end;
     left: 23%;
-    top: -40px;
+    bottom: -230px;
     transform: translate(-21%,-50%);
 }
 
@@ -214,7 +214,7 @@
     width: 100%;
     max-width: 1000px;
     position: relative;
-    padding: 0px 20px 84px;
+    padding: 0px 20px 65px;
     top: 40px;
     z-index: 3;
     height: auto;
@@ -222,10 +222,14 @@
     background: #FCFCFC;
     border-radius: 15px;
 }
+.contact_form form{
+    max-width: 800px;
+    margin: auto;
+}
 
 .input_block {
     max-width: 500px;
-    margin: 115px auto 0;
+    margin: 90px auto 0;
 }
 
 .input_item {
@@ -246,7 +250,7 @@
 }
 
 .textarea_block {
-    margin: 112px auto 0;
+    margin: 90px auto 0;
     display: flex;
     flex-direction: column;
     max-width: 460px;
@@ -256,7 +260,9 @@
     padding: 5px;
     color: #A7A7A7;
     border-color: #E5E5E5;
-    height: 118px;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
 }
 
 .contact_form textarea:focus {
@@ -411,25 +417,25 @@
 }
 
 .armenian_office .contact_block .phone_block .phone_icon {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .armenian_office .contact_block .phone_block .phone_number {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
     margin-top: 20px;
 }
 
 .armenian_office .contact_block .mail_block .mail_icon {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .armenian_office .contact_block .mail_block .mail_name {
     margin-top: 20px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
 }
@@ -448,7 +454,7 @@
 .about_us_main_content .team_content{
     max-width: 640px;
     margin: 30px auto 0;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
 }
 .about_us_main_content .team_content .company{
@@ -459,7 +465,7 @@
     padding: 45px 80px;
 }
 .about_us_main_content .block_content{
-    max-width: 1900px;
+    max-width: 1800px;
     margin: auto;
 }
 .about_us_main_content .block_content .articel_img{
@@ -469,12 +475,12 @@
 }
 
 .about_us_main_content .article_block .articel_main {
-    max-width: 1900px;
+    max-width: 1800px;
     margin: auto;
 }
 
 .about_us_main_content .article_block {
-    padding: 80px 45px;
+    padding: 45px 80px;
     background: #23504B;
 }
 
@@ -495,7 +501,7 @@
 }
 
 .about_us_main_content .article_block .article_text {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 28px;
     color: #fff;
@@ -563,17 +569,17 @@
     margin-top: 15px;
 }
 .about_us_main_content .article .article_main_content{
-    max-width: 1900px;
+    max-width: 1800px;
     margin: auto;
 }
 .about_us_main_content .article .article_main_content .main_text{
     /*max-width: 775px;*/
     text-align: center;
     margin: auto;
-    color: #615E5E;
+    color: #23504B;
 }
 .about_us_main_content .article .article_main_content .main_text span{
-    font-size: 43px;
+    font-size: 38px;
     margin-right: 20px;
     display: inline-block;
     text-transform: uppercase;
@@ -582,7 +588,7 @@
     padding: 90px 45px 190px;
 }
 .about_us_main_content .aside .aside_content{
-    max-width: 1900px;
+    max-width: 1800px;
     margin: auto;
 }
 .about_us_main_content .aside .aside_board{

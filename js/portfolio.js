@@ -74,7 +74,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
     portfolioData = {
         electrical: [
             {
-                title: 'Red Pulse2',
+                title: 'Red Pulse',
                 contenet: `Red Pulse is an online system of automated mobile repairs, where Users
                         can order mobile repair through website or mobile application. They can find nearest or cheapest
                         workshop, get the device shipped and follow all steps and costs online.`,
@@ -363,6 +363,7 @@ $(window).on('load', () => {
         document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
     }
     changeDataDown(idName, true, "click");
+
 });
 
 

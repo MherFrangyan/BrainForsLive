@@ -275,7 +275,7 @@
 
 .portfolio_content .carousel_navigation {
     height: 100%;
-    padding-left: 60px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
     border-right: 1px solid rgba(0, 0, 0, .1);
@@ -285,7 +285,7 @@
 }
 
 .portfolio_content .carousel_view_number{
-    width: 195px;
+    width: 205px;
     top: 50%;
     position: fixed;
     transform: translateY(-50%);

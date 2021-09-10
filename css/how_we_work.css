@@ -1,6 +1,12 @@
 .how_we_work_content .header_board img {
     width: 100%;
 }
+.how_we_work_content .header_board .carousel-indicators li{
+    background-color: #343434;
+}
+.how_we_work_content .header_board .carousel-indicators li.active{
+    background-color: #C4C4C4;
+}
 .carousel_block{
     margin-top: 60px;
 }
@@ -83,13 +89,14 @@
 .article_block .article_title {
     font-size: 25px;
     letter-spacing: 4px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     color: #fff;
+    margin-top: 35px;
     text-transform: uppercase;
 }
 
 .article_block .article_text {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 28px;
     color: #fff;
@@ -201,13 +208,13 @@
 .delivery_location_block .location_block_content .btn-go-project{
     background: #23504B;
     border-radius: 7px;
-    padding: 12px 33px 12px;
+    padding: 12px 15px 12px;
     color: white;
     display: block;
     margin: 25px auto 0;
-    max-width: 240px;
+    max-width: 260px;
 
-    transition: all .5s
+    transition: all .5s;
 }
 .delivery_location_block .location_block_content .btn-go-project:hover{
     background: #1c423e;
