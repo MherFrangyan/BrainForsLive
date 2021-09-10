@@ -321,7 +321,7 @@ body {
     text-align: center;
     right: 50%;
     height: 460px;
-    transform: translate(50%, 50%);
+    transform: translate(50%, 50%) !important;
 }
 .header-nav .nav-list.menu_list .nav-link{
     font-size: 18px;
