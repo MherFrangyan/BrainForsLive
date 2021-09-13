@@ -6,6 +6,7 @@ AOS.init({
     duration: 1000,
     delay: 100
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     if (AOS) {
         $('.os-viewport').scroll(function () {

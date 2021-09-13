@@ -432,6 +432,14 @@
 
     /*portfolio page  media end*/
 
+    /*footer start */
+    .footer .footer_item_main{
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    /*footer end*/
+
 }
 
 @media(max-width:576px) {
@@ -851,4 +859,27 @@
         font-size: 11px;
     }
     /*portfolio page  media end*/
+    /*footer start */
+    .footer .footer_item_main{
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+    .footer_down_text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .colum_content p{
+        font-size: 12px;
+    }
+    .footer .colum_content span{
+        font-size: 11px;
+    }
+    .footer .footer_navigation_block{
+        padding: 0;
+    }
+    .footer .footer_navigation_block .footer_item .footer_link{
+        font-size: 12px;
+    }
+    /*footer end*/
 }

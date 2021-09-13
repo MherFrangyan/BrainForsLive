@@ -203,7 +203,7 @@ body {
 .nav-link-dropdown .dropdown_links{
     list-style: none;
     position: absolute;
-    width: 205px;
+    width: 155px;
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -328,6 +328,7 @@ body {
 }
 .header-nav .nav-list.menu_list .dropdown_links{
     position: initial;
+    width: 205px;
 }
 .header-nav .nav-list.menu_list .nav-link-dropdown:hover .dropdown_links{
     height: auto;
@@ -1081,7 +1082,10 @@ body {
     background: #23504B;
     height: auto;
 }
-
+.footer_container{
+    max-width: 1490px;
+    margin: auto;
+}
 .footer .footer_item_main {
     padding-left: 15px;
     max-width: 300px;
@@ -1158,6 +1162,10 @@ body {
     text-transform: capitalize;
 
     transition: all .3s;
+}
+.footer .footer_navigation_block .footer_item .footer_link.active{
+    color: black;
+    font-weight: 500;
 }
 
 .footer .footer_navigation_block .footer_item .footer_link:hover {

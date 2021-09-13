@@ -293,6 +293,7 @@
 .portfolio_content .carousel_navigation .view_item .nav-link{
     padding: 0;
     display: flex;
+    align-items: center;
     font-weight: 600;
     cursor: pointer;
     color: #bfbfbf;
