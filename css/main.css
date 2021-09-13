@@ -187,8 +187,8 @@ body {
     width: 85%;
 }
 .nav-link-item.active .underline_link{
-    max-width: 85%;
-    width: 85%;
+    max-width: 90%;
+    width: 100%;
     opacity: 1;
 }
 

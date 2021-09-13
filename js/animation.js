@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (AOS) {
         $('.os-viewport').scroll(function () {
             AOS.refresh();
-            if ($(this).scrollTop() > 10) {
+            if ($(this).scrollTop() > 100) {
                 $('.nav-list').css('display', 'none');
                 $('.nav-toggle').css('display', 'block');
                 if (iter === 0) {

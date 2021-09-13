@@ -1,6 +1,8 @@
 var clickChangeSlideDown = document.querySelectorAll('.scroll_down'),
     clickChangeSlideUp = document.querySelectorAll('.scroll_up');
 var navLink = document.querySelectorAll('.view_item'),
+    nvaItem = document.querySelectorAll('.navigation_block .nav-link'),
+    tabPane = document.querySelectorAll('.tab-pane'),
     dicrementElectrical = 0,
     dicrementHealth = 0,
     dicrementBusiness = 0,
@@ -368,6 +370,7 @@ $(window).on('load', () => {
 
 
 function changeDataDown(id, down, click) {
+    console.log(333);
     stopScrollEvent = false;
     navLink.forEach(el => {
         el.classList.add('disabled')
@@ -458,6 +461,12 @@ function changeDataDown(id, down, click) {
             break;
 
         case "media":
+            console.log(portfolioData[idName].length);
+            console.log(dicrement);
+
+            if (portfolioData[idName].length - 1 < dicrementHealth ){
+                console.log(8888);
+            }
             if (click === 'click') {
                 dicrement = dicrementMedia;
             } else {
@@ -644,6 +653,115 @@ document.querySelector('.page_content').addEventListener('mousewheel', (ev) => {
             if (portfolioData[idName].length - 2 >= dicrement) {
                 changeDataDown(idName, true);
             } else {
+                if (nvaItem[nvaItem.length-1].className === 'nav-link active' ){//nav Linkeri qanak
+                    return;
+                }
+                var changeActiveLink = true;
+                nvaItem.forEach((el,idx) => {
+                    if (changeActiveLink){
+                        if (el.className === 'nav-link active'){
+                            el.className = 'nav-link';
+                            nvaItem[idx+1].className = 'nav-link active';
+                            var navLinkId = nvaItem[idx + 1].id;
+                            tabPane[idx].className = 'tab-pane fade';
+                            tabPane[idx+1].className = 'tab-pane fade show active';
+                            changeActiveLink = false;
+                            console.log(tabPane[idx]);
+                            console.log(tabPane[idx+1]);
+                            switch (navLinkId) {
+                                case 'electrical':
+                                    dicrementElectrical = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'health':
+                                    dicrementHealth = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+                                case 'business-automation':
+                                    dicrementBusiness = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+
+                                case 'media':
+                                    dicrementMedia = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'marketing':
+                                    dicrementMarketing = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'food-beverages':
+                                    dicrementFood = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'travel':
+                                    dicrementTravel = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                        document.querySelector(`#v-${idName} .scroll_up`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'games':
+                                    dicrementGames = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    break;
+
+                                case 'other':
+                                    dicrementOther = 0;
+                                    idName = navLinkId;
+                                    changeDataDown(idName, true, 'click');
+                                    if (portfolioData[idName].length === 1) {
+                                        document.querySelector(`#v-${idName} .scroll_down`).classList.add('d-none');
+                                    }
+                                    // dicrementOther = 1;
+                                    // otherScrollDown.classList.remove('d-none');
+                                    // otherScrollUp.classList.add('d-none');
+                                    // if(viewOther.length <= 1){
+                                    //     otherScrollDown.classList.add('d-none');
+                                    // }
+                                    break;
+                            }
+                        }
+                    }
+                });
+                console.log(document.querySelectorAll('.navigation_block .nav-link'));
+                console.log('end')
                 return;
             }
 
@@ -695,7 +813,7 @@ function ScrollAnimationFunc() {
 }
 
 // click scroll to top
-navLink.forEach(el => {
+navLink.forEach(function clickNavlink(el)  {
     el.addEventListener('click', (e) => {
         if (stopScrollEvent) {
             switch (e.srcElement.id) {

@@ -170,7 +170,7 @@
     background-size: cover;
     height: 604px;
     position: relative;
-    padding-top: 100px;
+    padding-top: 130px;
 
 }
 
@@ -303,7 +303,7 @@
     position: relative;
     background: url("../img/Google-Maps.png") center center no-repeat;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 100px;
     height: 900px;
 }
 .location_block iframe{

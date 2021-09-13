@@ -37,7 +37,7 @@ if (location.pathname === "/BrainForsLive/contactUs.html") {
 
 document.addEventListener("DOMContentLoaded", function () {
     $('.os-viewport').scroll(function () {
-        if ($(this).scrollTop() > 10) {
+        if ($(this).scrollTop() > 100) {
             $('.nav-list').css('display', 'none');
             $('.nav-toggle').css('display', 'block');
             if (iter === 0) {
