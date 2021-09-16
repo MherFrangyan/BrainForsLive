@@ -427,6 +427,7 @@
 }
 .project_main_block .project_screenshot img{
     width: 100%;
+    max-height: 400px;
 }
 .click_scrolling{
     display: flex;
