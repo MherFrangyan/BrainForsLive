@@ -179,6 +179,20 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                 info: ['PHP, Angular 2+', '8']
 
             },
+            {
+                title: 'Music Teachers Helper',
+                contenet: `MTH is an online platform designed to automatize the overall workflow of
+                        music teachers including payments, lessons and invoices. Teachers can do online lessons and
+                        receive payments from the platform which accepts credit cards. It’s a very convenient website
+                        for internal communication between teachers and students, where teachers can upload audio to
+                        their own file area for students to access and email them with a few clicks and post public or
+                        private studio announcements.
+                        `,
+                img: './img/porfolio/music_teachers.png',
+                url: 'https://musicteachershelper.com/',
+                info: ['PHP, Angular 2+', '8']
+
+            },
         ],
         marketing: [
             {
@@ -193,7 +207,7 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                         2. A supplier to a Bob.AI client and accessing the app for Supplier Collaborations functions
                         3. A customer of a Bob.AI client and accessing the app for CRM functions`,
                 img: './img/porfolio/bobai.png',
-                url: 'https://play.google.com/store/apps/details?id=com.bob.ai',
+                url: 'https://bob.ai/main',
                 info: ['PHP, Angular 2+', '8']
 
             },
@@ -272,17 +286,17 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                 info: ['PHP, Angular 2+', '8']
 
             },
-            {
-                title: 'KobGames',
-                contenet: `KobGames is a gaming app available on Play Market and App Store, through
-                        which we collect game information, send notifications about game status via Slack, for example, when
-                        a new version of the game becomes available, slack sends notifications to different channels. Various
-                        APIs are integrated including: slack, trello, game analytic, google, youtube, Instagram.`,
-                img: './img/porfolio/koba_games.png',
-                url: 'https://www.kobgames.com/',
-                info: ['PHP, Angular 2+', '8']
-
-            },
+            // {
+            //     title: 'KobGames',
+            //     contenet: `KobGames is a gaming app available on Play Market and App Store, through
+            //             which we collect game information, send notifications about game status via Slack, for example, when
+            //             a new version of the game becomes available, slack sends notifications to different channels. Various
+            //             APIs are integrated including: slack, trello, game analytic, google, youtube, Instagram.`,
+            //     img: './img/porfolio/koba_games.png',
+            //     url: 'https://www.kobgames.com/',
+            //     info: ['PHP, Angular 2+', '8']
+            //
+            // },
         ],
         other: [
             {
@@ -310,18 +324,18 @@ var electricalProjectName = document.querySelector('.view_electrical .project_na
                 info: ['PHP, Angular 2+', '8']
 
             },
-            {
-                title: 'BPI group:A global talent expert',
-                contenet: `Executive coaching is an online training package for high ranked
-                        executives in big organizations. It manages and automatizes the administrative workflow (all the
-                        processing of contracts and payments with clients and coaches), internal communications and
-                        also the coaching interaction (coaches sessions with the executives). It also provides the client
-                        with an overview of the project.`,
-                img: './img/porfolio/BPI.png',
-                url: 'https://bpioutplacementservices.com/login/',
-                info: ['PHP, Angular 2+', '8']
-
-            },
+            // {
+            //     title: 'BPI group:A global talent expert',
+            //     contenet: `Executive coaching is an online training package for high ranked
+            //             executives in big organizations. It manages and automatizes the administrative workflow (all the
+            //             processing of contracts and payments with clients and coaches), internal communications and
+            //             also the coaching interaction (coaches sessions with the executives). It also provides the client
+            //             with an overview of the project.`,
+            //     img: './img/porfolio/BPI.png',
+            //     url: 'https://bpioutplacementservices.com/login/',
+            //     info: ['PHP, Angular 2+', '8']
+            //
+            // },
             {
                 title: 'Leading Practice',
                 contenet: `The EnterprisePLUS software tools (Enterprise+ or E+) is a new breed of
@@ -464,7 +478,7 @@ function changeDataDown(id, down, click) {
             console.log(portfolioData[idName].length);
             console.log(dicrement);
 
-            if (portfolioData[idName].length - 1 < dicrementHealth ){
+            if (portfolioData[idName].length - 1 < dicrementHealth) {
                 console.log(8888);
             }
             if (click === 'click') {
@@ -653,21 +667,21 @@ document.querySelector('.page_content').addEventListener('mousewheel', (ev) => {
             if (portfolioData[idName].length - 2 >= dicrement) {
                 changeDataDown(idName, true);
             } else {
-                if (nvaItem[nvaItem.length-1].className === 'nav-link active' ){//nav Linkeri qanak
+                if (nvaItem[nvaItem.length - 1].className === 'nav-link active') {//nav Linkeri qanak
                     return;
                 }
                 var changeActiveLink = true;
-                nvaItem.forEach((el,idx) => {
-                    if (changeActiveLink){
-                        if (el.className === 'nav-link active'){
+                nvaItem.forEach((el, idx) => {
+                    if (changeActiveLink) {
+                        if (el.className === 'nav-link active') {
                             el.className = 'nav-link';
-                            nvaItem[idx+1].className = 'nav-link active';
+                            nvaItem[idx + 1].className = 'nav-link active';
                             var navLinkId = nvaItem[idx + 1].id;
                             tabPane[idx].className = 'tab-pane fade';
-                            tabPane[idx+1].className = 'tab-pane fade show active';
+                            tabPane[idx + 1].className = 'tab-pane fade show active';
                             changeActiveLink = false;
                             console.log(tabPane[idx]);
-                            console.log(tabPane[idx+1]);
+                            console.log(tabPane[idx + 1]);
                             switch (navLinkId) {
                                 case 'electrical':
                                     dicrementElectrical = 0;
@@ -813,7 +827,7 @@ function ScrollAnimationFunc() {
 }
 
 // click scroll to top
-navLink.forEach(function clickNavlink(el)  {
+navLink.forEach(function clickNavlink(el) {
     el.addEventListener('click', (e) => {
         if (stopScrollEvent) {
             switch (e.srcElement.id) {

@@ -1,5 +1,7 @@
 .how_we_work_content .header_board img {
-    width: 100%;
+    align-items: inherit;
+    object-fit: cover;
+    height: 100%;
 }
 .how_we_work_content .header_board .carousel-item{
     height: 100vh;
@@ -44,7 +46,7 @@
 }
 
 .success_stories_block {
-    max-width: 1900px;
+    max-width: 1700px;
     margin: 60px auto;
 }
 
@@ -70,7 +72,7 @@
 }
 
 .article_block .articel_main {
-    max-width: 1900px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -85,7 +87,7 @@
 }
 
 .article_block .article_content {
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .article_block .article_title {
@@ -167,7 +169,7 @@
 }
 
 .custom_software_content {
-    max-width: 1900px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -201,7 +203,7 @@
 
 .delivery_location_block .location_block_content{
     text-align: center;
-    max-width: 1900px;
+    max-width: 1300px;
     margin: auto;
 }
 .delivery_location_block .location_block_content img{
