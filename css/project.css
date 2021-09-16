@@ -266,11 +266,9 @@
 }
 
 .portfolio_content{
-
     width: 100%;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
 .portfolio_content .carousel_navigation {
