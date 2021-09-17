@@ -369,7 +369,7 @@
     .contact_us_main .contact_form{
         width: 100%;
         top: 10px;
-        padding: 0px 20px 15px;
+        padding: 0 20px 15px;
     }
     .contact_form .input_block{
         max-width: 95%;
@@ -793,6 +793,16 @@
     .contact_us_main .location_block{
         height: 600px;
     }
+    div.baner_title .hi_content{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    div.location_block{
+        padding-top: 50px;
+    }
+    div.baner_title .baner_description{
+        font-size: 12px;
+    }
     .location_block .armenian_office .contact_block .phone_block .phone_icon{
         font-size: 25px;
     }
@@ -814,12 +824,12 @@
         margin: 17px 10px 20px;
         width: 40px;
     }
-    .tab-content .armenian_office .team_photo{
-        background-position: -165px;
+    .contact_us_main .bg-baner {
+        padding-top: 40px;
     }
-
     .contact_form .textarea_block  textarea{
         height: 95px;
+        min-height: 95px;
     }
     .contact_form .textarea_block .btn-outline-green{
         padding: 7px 0 8px;
