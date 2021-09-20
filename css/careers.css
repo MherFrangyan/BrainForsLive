@@ -126,12 +126,19 @@
     padding: 5px 20px;
     display: flex;
     align-items: center;
+
+    transition: all .5s;
 }
 .jobs_block .jobs_card_block .job_card .btn_apply:focus{
     box-shadow: none;
 }
+
+.jobs_block .jobs_card_block .job_card .btn_apply:hover{
+    background:#00654F;
+    color: white;
+}
+
 .jobs_block .jobs_card_block .job_card .btn_apply i{
-    color: #00654F;
     margin-left: 15px;
     font-size: 14px;
 }
@@ -165,9 +172,16 @@
     max-width: 150px;
     margin: 30px auto 95px;
     align-items: center;
+
+    transition: all .5s;
 }
 .send_cv_block .bnt_send:focus{
     box-shadow: none;
+}
+
+.send_cv_block .bnt_send:hover{
+    background: transparent;
+    color: #00654F;
 }
 
 @media (max-width: 767px) {
