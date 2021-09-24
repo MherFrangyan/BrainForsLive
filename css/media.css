@@ -230,7 +230,7 @@
 @media(max-width:767px) {
     /*nav-bar media css start*/
     .navbar-brand img{
-        width: 80%;
+        width: 70px;
     }
     .min_menu_block .close_menu{
         width: 50px;
@@ -698,7 +698,7 @@
         padding: 0;
     }
     .navbar-brand img {
-        width: 50%;
+        width: 40px;
     }
     .nav-toggle:hover span{
         margin: 1px auto 4px;

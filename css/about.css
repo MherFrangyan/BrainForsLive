@@ -3,6 +3,8 @@
     box-shadow: 0px 17px 19px -27px rgba(0, 0, 0, 0.75);
     width: 100%;
     z-index: 99;
+
+    transition: all .5s;
 }
 
 .heder-nav {

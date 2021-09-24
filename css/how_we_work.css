@@ -195,6 +195,8 @@
 }
 
 .custom_software_content .baner_img {
+    margin: auto;
+    display: block;
     width: 90%;
     height: 90%;
 }

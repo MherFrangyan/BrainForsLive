@@ -144,6 +144,9 @@ body {
     margin: auto;
     padding: 0 30px;
 }
+.navbar-brand img{
+    width: 70px;
+}
 .nav-link-dropdown {
     position: relative;
 }

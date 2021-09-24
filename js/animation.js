@@ -17,20 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.os-viewport').scroll(function () {
             AOS.refresh();
             if ($(this).scrollTop() > 100) {
-                $('.nav-list').css('display', 'none');
-                $('.nav-toggle').css('display', 'block');
+                $('.nav-fixed').css('display', 'none');
                 if (iter === 0) {
                     iter++;
-                    navBarAnim.from('.nav-list', {opacity: 0, x: 100, duration: .3})
-                        .from('.nav-toggle', {opacity: 0, x: 100, duration: .2});
+                    navBarAnim.from('.nav-fixed', {opacity: 0, y: 100, duration: .3});
                 }
             } else {
-                $('.nav-list').css('display', '');
-                $('.nav-toggle').css('display', '');
+                $('.nav-fixed').css('display', 'block');
                 if (iter === 1) {
                     iter--;
-                    navBarAnim.from('.nav-list', {opacity: 0, x: -100, duration: .3})
-                        .from('.nav-toggle', {opacity: 0, x: 100, duration: .2});
+                    navBarAnim.from('.nav-fixed', {opacity: 0, y: -100, duration: .3})
                 }
             }
         });
