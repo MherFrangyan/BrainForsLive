@@ -181,7 +181,7 @@
     top: 0;
     height: 604px;
     width: 100%;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .7);
 }
 
 .baner_title {
@@ -461,10 +461,25 @@
 }
 
 .about_us_main_content .header_block .carousel-indicators li{
-    background-color: #343434;
+    background-color: #ffffff;
 }
 .about_us_main_content .header_block .carousel-indicators li.active{
-    background-color: #C4C4C4;
+    background-color: #23504B;
+}
+.about_us_main_content #carouselExampleIndicators .carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 11px;
+    list-style: none;
+    margin: 0;
+    box-shadow: inset 0px -29px 24px -7px #000000;
 }
 .about_us_main_content .team_content{
     max-width: 640px;

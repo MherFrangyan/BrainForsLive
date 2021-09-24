@@ -1,7 +1,12 @@
 var anim = gsap.timeline({onComplete: animFinished}),
     navBarAnim = gsap.timeline(),
     navLink = document.querySelectorAll('.navigation_block .view_item'),
-    iter = 0;
+    itemLink = document.querySelectorAll('.view_item .nav-link'),
+    tabPane = document.querySelectorAll('.tab-pane'),
+    whatWeDo = document.querySelector('.what_we_do'),
+    stopIteration = false,
+    iter = 0,
+    count = 1;
 AOS.init({
     duration: 1000,
     delay: 100
@@ -31,6 +36,51 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+var isActive = true;
+whatWeDo.addEventListener("mousewheel", e => {
+
+    if (stopIteration){
+        if (e.deltaY > 0){
+            if (count < itemLink.length){
+                stopIteration = false;
+                isActive = true;
+                itemLink.forEach((el,idx) =>{
+                    if (isActive){
+                        if (el.className === 'nav-link active') {
+                            itemLink[idx].className = 'nav-link';
+                            itemLink[idx + 1].className = 'nav-link active';
+                            tabPane[idx].className = 'tab-pane fade';
+                            tabPane[idx + 1].className = 'tab-pane fade show active';
+                            isActive = false;
+                            count++;
+                        }
+                    }
+                });
+                animationFunc();
+            }
+
+        }else if (e.deltaY < 0){
+            if (count > 1){
+                stopIteration = false;
+                isActive = true;
+                itemLink.forEach((el,idx) =>{
+                    if (isActive){
+                        if (el.className === 'nav-link active') {
+                            itemLink[idx].className = 'nav-link';
+                            itemLink[idx - 1].className = 'nav-link active';
+                            tabPane[idx].className = 'tab-pane fade';
+                            tabPane[idx - 1].className = 'tab-pane fade show active';
+                            isActive = false;
+                            count--;
+                        }
+                    }
+                });
+                animationFunc();
+            }
+        }
+    }
+
+});
 
 $('.navigation_block a').on('click', function (e) {
     e.preventDefault();
@@ -59,6 +109,7 @@ function animationFunc() {
 
 
 function animFinished() {
+    stopIteration = true;
     navLink.forEach(el => {
         el.classList.remove('disabled');
     });

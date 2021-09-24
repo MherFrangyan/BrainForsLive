@@ -258,6 +258,23 @@
         width: 60%;
     }
 }
+/*what_we_do start */
+.what_we_do.portfolio_content{
+    width: 1506px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.what_we_do .project_main_block .project_screenshot img{
+    max-height: initial;
+    height: 100%;
+}
+.what_we_do .project_main_block .project_screenshot{
+    max-height: initial;
+    height: 85%;
+}
+/*what_we_do end */
+
 
 /*portfolio page css start*/
 .view_item.disabled{
@@ -322,7 +339,7 @@
 }
 .project_main_block{
     padding-top: 120px;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     flex-direction: column;

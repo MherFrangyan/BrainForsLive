@@ -7,10 +7,25 @@
     height: 100vh;
 }
 .how_we_work_content .header_board .carousel-indicators li{
-    background-color: #343434;
+    background-color: #ffffff;
 }
 .how_we_work_content .header_board .carousel-indicators li.active{
-    background-color: #C4C4C4;
+    background-color: #23504B;
+}
+.how_we_work_content #carouselExampleIndicators .carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 11px;
+    list-style: none;
+    margin: 0;
+    box-shadow: inset 0px -29px 24px -7px #000000;
 }
 .carousel_block{
     margin-top: 60px;
@@ -19,9 +34,15 @@
     display: initial;
     width: 30%;
 }
-
+.owl-carousel .owl-item img.static_size{
+    width: 60%;
+}
 .owl-carousel.owl-drag .owl-item {
     text-align: center;
+}
+.owl-carousel .owl-stage{
+    display: flex;
+    align-items: center;
 }
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
@@ -82,8 +103,8 @@
 }
 
 .article_block img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .article_block .article_content {
@@ -95,7 +116,7 @@
     letter-spacing: 4px;
     margin-bottom: 40px;
     color: #fff;
-    margin-top: 35px;
+    margin-top: 5px;
     text-transform: uppercase;
 }
 
@@ -174,8 +195,8 @@
 }
 
 .custom_software_content .baner_img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .custom_software_content .text_block {

@@ -52,6 +52,7 @@
     object-fit: cover;
 }
 .main_title{
+    text-transform: uppercase;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 100px;
@@ -76,6 +77,7 @@
     margin: 0 auto 68px;
 }
 .jobs_block .jobs_title{
+    text-transform: uppercase;
     font-size: 24px;
     line-height: 140.69%;
     color: #3C3C3C;

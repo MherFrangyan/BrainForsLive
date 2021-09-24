@@ -131,7 +131,6 @@ body {
 }
 .nav-fixed.background_change .nav-link-item.active .nav-link{
     color: white;
-    font-weight: 700;
 }
 
 .nav-fixed.background_change .menu_list.nav-list .nav-link{
